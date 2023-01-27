@@ -65,44 +65,42 @@ scene.cameraShake(4, 500)
 
 ## Introduction @unplugged
 
-**Intergalactic travel is dangerous!**
+**Les voyages intergalactiques, ça peut être dangereux !**
 
-Let's add some enemies for your ship to avoid.  
-These could be asteroids, radioactive debris, or angry space sharks!
+Ajoutons quelques ennemis que ton vaisseau dtoi éviter.
+Ça peut être des astéroïdes, des débris radioactifs ou des requins de l'espace très énervés !
 
 ![Releasing projectiles](/static/skillmap/space/projectiles.gif "Here, enemy ship. Would you like to borrow an asteroid?")
 
 
-## Step 1
+## Étape 1
 
-**👾 Feel like making enemies rain from the sky? 👾**
+**👾 Faisons pleuvoir les ennemis 👾**
 
-Let's add some code that will drop an enemy toward the ship every second or so.
+On va ajouter un peu de code pour faire apparaître des ennemis toutes les quelques secondes, et les faire avancer vers le joueur.
 
 ---
  
-🔲 Add an ``||game:on game update every [500] ms||`` container to the workspace  
-
-🔲 Change the last argument to **1000** [__*ms*__](#millis "milliseconds...aka 1/1000 of a second") 
-(or pick **1 second** from the dropdown)    
-<br/>
+- :puzzle piece: Ajoute un container ``||game:on game update every [500] ms||`` dans l'espace de travail
+- :pencil alternate: Change le dernier argument à **1000** [__*ms*__](#millis "millisecondes... soit 1/1000 de seconde") 
+(ou choisis **1 seconde** dans le menu déroulant)  
 
 ```blocks
 game.onUpdateInterval(1000, function () {
 })
 ```
 
-## Step 2
+## Étape 2
 
-🔲 In the ``||sprites:Sprites||`` category, find the
-``||variables:set [projectile2] to projectile [ ] from side with vx [50] vy [50]||`` block
-and drag it into the new **on game update** container.
+- :mouse pointer: Dans la catégorie ``||sprites:Sprites||``, cherche le bloc
+``||variables(sprites): définir [projectile2] à projectile [ ] depuis bord avec vx [50] vy [50]||`` 
+et glisse le dans le container **quand mise à jour du jeu**
 
-🔲 Click on the ``||variables:[projectile2]||`` value inside the new block and 
-select "Rename variable..."  
+- :pencil alternate: Clique sur la valeur ``||variables:[projectile2]||`` dans le bloc que tu viens de placer et sélectionne "
+select "Renommer la variable..."  
 
-🔲 Change the variable name to ``||variables:myEnemy||`` so we know these are the baddies.  
-<br/>
+- :tag: Change le nom de la variable en ``||variables:myEnemy||`` pour qu'on sache que ce sont les méchants
+
 ```blocks
 let myEnemy: Sprite = null
 game.onUpdateInterval(1000, function () {
@@ -128,16 +126,15 @@ game.onUpdateInterval(1000, function () {
 })
 ```
 
-## Step 3
-**🎆 Let's get the enemies moving in the right direction 🎆**
+## Étape 3
+**🎆 Faisons bouger les ennemis dans la bonne direction🎆**
 
 ---
 
-🔲 Click the grey square inside the new block to design your enemy  
-(or choose one from the gallery).  
+- :square: Clique sur le carré gris dans le bloc pour dessiner le sprite de l'ennemi
+(Tu peux aussi en choisir un dans la Galerie) 
 
-🔲 Play with the **vx** and **vy** values of **myEnemy** until 
-your new sprites are falling straight down the side of the screen. 
+- :pencil alternate: Bidouille les valeurs de **vx** et **vy** de **myEnemy** jusqu'à ce que les sprites descendent l'écran.
 
 
 ```blocks
@@ -165,34 +162,33 @@ game.onUpdateInterval(1000, function () {
 })
 ```
 
-## Step 4
+## Étape 4
 
 
-Enemies aren't likely to hit the ship if they're all the way off to the side, 
-so let's add an element of surprise using [__*random numbers*__](#randos "numbers appearing seemingly without a predictable pattern") .
-
----
-
-
-🔲 Snap a ``||sprites:set [mySprite] [x] to [0]||`` block into the 
-end of the **on game update** container.  
-
-🔲 To make sure we're acting on the right sprites, use the dropdown in the 
-new block to change ``||variables:mySprite||`` to ``||variables:myEnemy||``.
-
-🔲 Set a random [__*x*__](#setX "horizontal location") 
-for the enemies using a
-``||Math:pick random [0] to [10]||`` block from the ``||Math:Math||`` category.
-Connect it to replace the **0** in the  **set mySprite x** block.
-
-🔲 Finally, update the minimum argument of the ``||Math:pick random [0] to [10]||`` block to **5** and the
-maximum argument to **155**. 
+Les ennemis n'ont pas beaucoup de chances de toucher le joueur s'ils restent coller au bord...
+On va ajouter un peu de surprise en utilisant des [__*nombres aléatoires*__](#randos "des nombres tirés au hasard") .
 
 ---
 
-**Tip:** The Arcade screen is 160px wide, 
-so you could make your enemies fall anywhere between 0 and 160 
-and still be able to see a piece of them.
+- :puzzle piece: Connecte un bloc ``||sprites: définir [mySprite] [x] to [0]||`` à la fin 
+du container **quand mise à jour du jeu**
+
+- :caret square down: Pour d'assurer qu'on affecte le bon sprite, utilise le menu déroulant de ce bloc pour changer ``||variables:mySprite||`` 
+en ``||variables:myEnemy||``.
+
+- :random: On va tirer un [__*x*__](#setX "horizontal location") 
+au hasard pour les ennemis en utilisant le bloc
+``||Math:choisir aléatoire entre [0] et [10]||`` de la catégorie ``||Math:Math||``.
+Connecte-le à la place du **0** dans le bloc  **définir myEnemy x**.
+
+- :pencil alternate: Enfin, modifie l'argument minimum de 
+- ``||Math:choisir aléatoire entre [0] et [10]||`` en **5** et le maximum en 155.
+
+---
+
+hint~❓ Pourquoi 5 et 155 ?
+La largeur de l'écran d'Arcade est de 160px. Mais comme le placement des sprites se fait au milieu de l'image, à 0 et 160 on ne verrait que la moitié de l'ennemi.
+~hint
 
 ```blocks
 let myEnemy: Sprite = null
@@ -222,20 +218,17 @@ game.onUpdateInterval(1000, function () {
 ```
 
 
-## Step 5
+## Étape 5
 
-You might want to add lots of different kinds of enemies plummeting from above.
-We can make sure they all have the same effect using the 
-"**Enemy**" [__*class*__](#withClass "a label you give a particular group so you can refer to it later").
+Tu as peut-être envie d'ajouter plein de types différents d'annemis qui sortent du haut de l'écran.
+On peut faire en sorte qu'ils aient tous le même comportement en utilisant la classe "**Enemy**" [__*class*__](#withClass "une catégorie qu'on donne à un groupe de sprites qui a le même comportement").
 
 ---
 
-🔲 Snap a ``||sprites:set [mySprite] kind to [Player]||`` block into the bottom of the 
-**on game update** container. 
+- :puzzle piece: Connecte un bloc ``||sprites:définir le type de [mySprite] à [Player]||`` à la fin du container **quand mise à jour du jeu**.
 
-🔲 Change ``||variables:mySprite||`` to ``||variables:myEnemy||``, then choose 
- ``||sprites:Enemy||`` as the kind.  
- <br/>
+- :pencil alternate: Change ``||variables:mySprite||`` en ``||variables:myEnemy||``, puis choisis
+ ``||sprites:Enemy||`` comme type.  
 
 
 ```blocks
@@ -268,27 +261,25 @@ game.onUpdateInterval(1000, function () {
 
 
 
-## Step 6
+## Étape 6
 
 
-**💥 Time to create some enemy behavior 💥**
+**💥 Il est temps de créer le comportement des ennemis 💥**
 
-To add excitement to the game, let's make something happen when an enemy
-collides with our ship. 
-
----
-
-
-🔲 Drag an ``||sprites:on [sprite] of kind [Player] overlaps [othersprite] of kind [Player]||`` 
-container into the workspace. 
-
-🔲 Change the last argument from ``||variables:Player||`` to ``||variables:Enemy||``.
+Pour rendre le jeu un peu plus intéressant, on va faire en sorte que quelque chose se passe quand les ennemis rentrent en collision avec le joueur.
 
 ---
 
-**Tip:** Don't try to change "sprite" → "mySprite" or "otherSprite" → "myEnemy".
-The "sprite" and "otherSprite" arguments here describe two general kinds of sprites on the screen
-(not the specific creations we gave names to earlier.) 
+- :mouse pointer: Glisse un container ``||sprites: Quand [sprite] de type [Player] chevauche [othersprite] de type [Player]||`` 
+dans l'espace de travail.
+
+- :pencil alternate: Change le dernier argument ``||variables:Player||`` en ``||variables:Enemy||``.
+
+---
+
+**Attention :** N'essaie pas de changer "sprite" en "mySprite" ou "otherSprite" en "myEnemy".
+Les arguments "sprite" et "otherSprite" sont là pour décrire deux types de sprites généraux sur l'écran.
+(Pas ceux qu'on a créés et nommés tout à l'heure.) 
 
 ```blocks
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -296,10 +287,9 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 })
 ```
 
-## Step 7
+## Étape 7
 
-When the enemy collides with the ship, 
-we want it to subtract a life...then disappear. 
+Quand l'ennemi rentre en collision avec le vaisseau, on veut qu'il nous enlève un point de vie... et qu'il disparaisse.
 
 ---
 
