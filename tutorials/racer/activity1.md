@@ -145,24 +145,18 @@ Tu as remarqué ? Les flèches et le bouton (A) ne marchent pas pour le moment.
 Le jeu fait seulement ce que tu lui as dit de faire jusqu'à maintenant.
 
 
-## 9. Follow that Sprite
+## 9. Suivez ce sprite !
 
-Did you notice that your truck quickly drives off-screen?
+Est-ce que tu as remarqué que ta voiture sort très vite de l'écran ?
 
-Let's make the "camera" follow the sprite so you can always see it.
-
----
-
-- :tree:  To keep the truck in sight, go to ``||scene:Scene||`` and drag <br/>
-``||scene:camera follow sprite [mySprite]||`` <br/>
-to **the end** of the <br/>
-``||loops:on start||`` container.
+Nous allons faire en sorte que la "caméra" suive le sprite pour qu'il soit toujours visible.
 
 ---
 
-- :mouse pointer: When you're ready to continue, click **Next**.
-
-
+- :tree:  Pour garder le sprite visible, va dans ``||scene:Scene||`` et prend le bloc <br/>
+``||scene:camera suit sprite [mySprite]||`` <br/>
+pour le placer à **la fin** du container<br/>
+``||loops:au démarrage||``.
 
 ```blocks
 tiles.setTilemap(tilemap`level1`)
@@ -176,13 +170,16 @@ scene.cameraFollowSprite(mySprite)
 
 
 
-## Finale
+## Le final
 
-Well done!
+Bien joué !  
 
-Take a look at the experience that you've created so far. Your truck should start rolling as soon as the game loads and keep going until it gets to the end of the first pit!
+Jette un oeil à ce que tu as créé jusqu'à maintenant. Ton monster truck devrait rouler dès que le jeu commence et continuer jusqu'à ce qu'il tombe dans le premier gouffre ! 
 
-When you're ready, click **Done** to head back out to the skillmap where you can play the next level to find out how to control your truck with arrows and buttons!
+Dès que tu es prêt·e, clique sur "Terminé" pour retourner à la carte des tutoriels et poursuivre la création de ce jeu. 
+
+Dans la prochaine partie, on a voir comment contrôler ton monster truck avec les boutons et les flèches !
+
 
 
 ```template
