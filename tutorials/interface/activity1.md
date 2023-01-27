@@ -131,7 +131,7 @@ Ce bloc ajout un "[__*splash screen*__](#splasht "Un message qui s'affiche en pl
 **Regardons comment ça marche**
 
 🔲 Trouve le bloc
-``||scene:set background color to [ ]||`` et connecte le tout en haut 
+``||scene:définir couleur d'arrière-plan à [ ]||`` et connecte le tout en haut 
 dans le bloc **au démarrage** qui est déjà dans la zone de travail.
 
 #### ~ tutorialhint 
