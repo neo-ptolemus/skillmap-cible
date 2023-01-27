@@ -46,51 +46,38 @@ mySprite.setFlag(SpriteFlag.StayInScreen, true)
 
 ![Releasing projectiles](/static/skillmap/space/projectiles.gif "Here, enemy ship. Would you like to borrow an asteroid?")
 
-Are you ready to customize your ship? 
+Prêt·e à customiser ton vaisseau ? 
 
-In this tutorial, you'll learn to fire a projectile when the **Ⓐ** button
-is pressed and also how to add special effects.
+Dans ce tutoriel, tu vas apprendre à envoyer des projectiles quand tu appuies sur le bouton **Ⓐ**, et à ajouter quelques effets spéciaux.
 
 
-## Customize sprites
+## Customiser les sprites.
 
-The workspace is pre-loaded with code for a flying ship.  
-Be sure to 
-**play with it in the simulator** to see if it works like you expect.
+Dans l'espace de travail, tu vas retrouver ton code pour faire bouger le vaisseau.
+N'oublie pas de 
+**tester ton jeu dans le simulateur** pour voir s'il fonctionne bien.
 
----
+- :space shuttle: Vérifie le [__*sprite*__](#sprote "Une image en 2D qui bouge sur l'écran") de ton vaisseau pour voir s'il te plaît toujours.
 
-🔲  Check your player [__*sprite*__](#sprote "2-D image that moves on the screen") 
-and to make sure you're happy with it. 
-
-🔲  If you want to make changes, click the sprite inside the block and design a new 
-kind of vehicle OR turn it into an alien creature using the sprite editor! 👽
+- :mouse pointer: Si tu veux faire des changements, clique sur le sprite dans le bloc et dessine un nouveau vaisseau OU Otransforme le en alien flottant grâce à l'éditeur de sprites ! 👽
 
 
 
-## Add a button event
+## Ajoute un événement bouton
 
-**Time for action!**
+**C'est parti pour l'action !**
 
-Let's launch projectiles when the **Ⓐ** button is pressed!
+On va lancer des projectiles quand on appuie sur le bouton **Ⓐ** !
 
----
+- :mouse pointer: Prens un container ``||controller:quand bouton [A] est [appuyé] ||`` et fais le glisser dans l'espace de travail.
 
-🔲 Drag an ``||controller:on [A] button pressed ||`` container into the workspace.
+- :puzzle piece: À l'intérieur, connecte un bloc   
+``||variables (sprites):définir [projectile] à projectile [ ] depuis [mySprite] avec vx [50] vy [50]||``.
 
-🔲 Snap a   
-``||variables:set [projectile] to projectile [ ] from [mySprite] with vx [50] vy [50]||`` 
-block inside of the new container.
-
-🔲 Click the grey box inside of the new projectile block to draw your 
-flying object (or select one from the **My Assets** tab.)
-
----
+- :square: Clique sur le carré gris dans le nouveau bloc de projectile et dessine ta propre fusée explosive (ou choisis-en une dans l'onglet "Mes ressources").
 
 
-**Tip:** Run your code in the simulator and launch a few projectiles 
-by pressing the **Ⓐ** button.  What happens?
-
+**Astuce :** Exécute ton code dans le simulateur et essaie de tirer des projecyiles en appuyant sur le bouton **Ⓐ** (ou la touche espace).  Que ce passe-t-il ?
 
 ```blocks
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -108,41 +95,38 @@ let projectile = sprites.createProjectileFromSprite(img`
 })
 ```
 
-## Retrospect @unplugged
+## Retrospective @unplugged
 
-You probably noticed that your projectiles are firing toward the bottom 
-right corner. This is *not helpful* when your enemies are coming from above! Let's take 
-a second to figure out what's happening.
+Tu as probablement remarqué que tes projetciles partent vers le bas.
+Ce n'est pas *très utile* si tes ennemis arrive par le ahut ! On va essayer de comprendre ce qu'il se passe.
 
 ---
 
-The ``||variables:set projectile to||`` block comes preloaded with 
-an [__*argument*__](#argue "extra chunk of information that the block needs") 
-that sets both the [__*vx*__](#whatVX "horizontal velocity") 
-and [__*vy*__](#whatVY "vertical velocity") 
-values to 50.
+Le bloc ``||variables:définir projectile à||`` est initialisé avec un [__*argument*__](#argue "Des informations dont le bloc a besoin") 
+qui met les valeurs de [__*vx*__](#whatVX "vélocité horizontale") 
+et [__*vy*__](#whatVY "vélocité verticale") 
+à 50.
 
 ```block
 let mySprite: Sprite = null
 let projectile = sprites.createProjectileFromSprite(img`.`, mySprite, 50, 50)
 ```
 
-## Learn Velocity @unplugged
+## Quelques mots sur la vélocité. @unplugged
 
-To change the direction of the projectiles, you need to change the  
-speed they travel in a certain direction.  
-In MakeCode Arcade, we call that the [__*velocity*__](#veloc "speed in a given direction").
+Pour changer la direction de tes projectiles, tu dois modifier la vitesse à laquelle ils vont dans une certaine direction.
+Dans MakeCode Arcade, on appelle ça la  [__*velocity*__](#vélocité "vitesse dans une direction donnée").
 
-- Change whether they fly left or right by changing the [__*vx*__](#whatX "speed from left to right")  
-- Change whether they fly up or down by changing the [__*vy*__](#whatX "speed from top to bottom")  
-- What happens when you change both?
+- Pour régler si le projectile va à gauche ou à droite, il faut modifier [__*vx*__](#whatX "vitesse de gauche à droite")  
+- Pour régler si le projectile va en haut ou en bas, il faut modifier [__*vy*__](#whatX "vitesse de haut en bas")  
+- Que ce passe-t-il si tu changes les deux ?
 
-![Directional Projectiles](/static/skillmap/space/vxvy.gif "Round and Round")
+![Directional Projectiles](/static/skillmap/space/vxvy.gif "Tourne et tourne et tourne")
 
 
-## Create a projectile
+## Créer un projectile
 
-Play with the __vx__ and __vy__ values of the projectile until they're flying straight up at a decent speed.
+Bidouille les valeurs de __vx__ and __vy__ jusqu'à ce qu'ils aillent vers le haut avec suffisemment de vitesse.
 
 ```blocks
 let mySprite: Sprite = null
@@ -161,15 +145,11 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 ```
 
-## Custom effects
+## Les effet spéciaux
+💥 Mainteant place aux effets spéciaux 💥
 
-💥 Now for some special effects 💥
-
----
-
-🔲 Find 
-``||sprites:[mySprite] start [spray] effect||`` and snap it in at 
-the bottom of the ``||controller:on [A] button pressed ||`` container.  
+- :puzzle piece: Trouve le bloc 
+``||sprites:[mySprite] commencer effet [spray]||`` et connecte le à la fin du container ``||controller:on quand bouton [A] est [appuyé]||``.
 
 🔲 Change variable ``||variables:mySprite||`` to ``||variables:projectile||`` if you
 want the effects on your projectiles instead of on your ship.  

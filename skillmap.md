@@ -30,7 +30,7 @@
 * tags: facile
 * next: space-activity2
 
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity1
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity1
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity1.png
 
 ### space-activity2
@@ -41,7 +41,7 @@
 * tags: facile, projectiles, types
 * next: space-activity3
 
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity2
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity2
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity2.png
 
 ### space-activity3
@@ -51,6 +51,6 @@
 * type: tutorial
 * tags: facile, ennemies, types
 
-* url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity3
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity3
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity3.png
 
