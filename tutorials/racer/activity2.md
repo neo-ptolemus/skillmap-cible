@@ -7,36 +7,34 @@ Maintenant que ton monster truck bouge, on va faire en sorte qu'il puisse sauter
 ![Make your truck jump dangerous pits of acid](/static/skillmap/racer/racer2.gif "Regarde ce qu'on va faire !")
 
 
-## 2. Remember
+## 2. Rafraîchis-toi la mémoire
 
-Take a look at the code that's already in your workspace.
+Regarde le code qu'il y a déjà dans ton espace de travail.
 
-You should see the blocks that add gravity, make your truck start moving, and set the camera to follow you through the cave.
-
-
+Tu devrais voir le bloc qui ajoute de la gravité, celui qui permet à ta voiture de bouger et celui qui fait suivre la caméra.
 
 
-## 3. Make the Jump
 
-You'll notice some pits of acid in the road. Help your truck avoid them when you press the (A) button.
+
+## 3. Saute
+
+Tu devrais remarquer quelques lacs d'acide sur le chemin de ton monster truck. Pour les éviter, on va sauter avec le bouton (A)
 
 ---
 
 
-- :game: From ``||controller:Controller||``, drag the <br/>
-``||controller:on [A] button [pressed]||`` <br/>
-container into an empty area of the workspace.
+- :game: Dans ``||controller:Controller||``, prend le container <br/>
+``||controller: quand bouton [A] est [appuyé]||`` <br/>
+et place-le dans une zone vide de ton espace de travail.
 
-- :paper plane: Inside of the <br/>
-``||controller:on [A] button [pressed]||`` <br/>
-container, add a new <br/>
-``||sprites:set [mySprite] [x] to [0]||`` block.
+- :paper plane: Dans ce container, ajoute un bloc<br/>
+``||sprites: définir [mySprite] [x] à [0]||``.
 
-- :mouse pointer: Change ``||sprites:[x]||`` to ``||sprites:[vy (velocity y)]||`` <br/>
-so you can make the truck move in the up/down direction.
+- :mouse pointer: Change ``||sprites:[x]||`` en ``||sprites:[vy (vélocité en y)]||`` <br/>
+pour que la voiture bouge sur l'axe haut-bas.
 
-- :mouse pointer: Change **0** to **-200** to send the truck upward with each press of the (A) button.
-
+- :mouse pointer: Change **0** en **-200** pour faire sauter le monster truck en l'air à chaque fois que tu appuies sur le bouton (A).
+  
 ```blocks
 let mySprite: Sprite = null
 
@@ -47,32 +45,32 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
 
 
-## 4. Play it Again
+## 4. Joue encore
 
-Remember to play your game again each time you make a change.
+N'oublie pas d'essayer ton jeu à chaque modification.
 
-Can you see the effects of the code you just wrote?
-
-
+Est-ce que tu vois les changements apportés par le nouveau code ?
 
 
-## 5. The Pits
 
 
-Now that you can jump the pits, let's make them dangerous.
+## 5. Les gouffres
+
+
+Maintenant que tu peux sauter par dessus les gouffres, on va les rendre un peu plus dangereux.
 
 ---
 
-- :tree: From ``||scene:Scene||``, drag the <br/>
-``||scene:on [sprite] of kind [Player] overlaps [ ] at [location]||`` <br/>
-container into an empty area of the workspace.
+- :tree: Dans ``||scene:Scene||``, prend un container <br/>
+``||scene:quand [sprite] de type [Player] chevauche [ ] à [location]||`` <br/>
+et place-le dans l'espace de travail.
 
-- :paint brush: Click the checkerboard image and change it to the **acid** tile.<br/>
+- :paint brush: Clique sur le damier et choisis à la place la tuile d'**acide**.<br/>
 ![Make your truck jump dangerous pits of acid](/static/skillmap/racer/acid.png "Avoid the acid tiles")
 
-- :circle: From ``||game:Game||``, snap a <br/>
-``||game:game over <LOSE>||`` <br/>
-block into the new container.
+- :circle: Dans ``||game:Game||``, prend un bloc <br/>
+``||game:jeu terminé <PERDU>||`` <br/>
+et ajoute-le à la fin du container..
 
 
 ```blocks
@@ -83,9 +81,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`acid`, function (sprite, loca
 
 
 
-## 6. The Spikes
+## 6. Les pics
 
-Pressing the (A) button more than once might send you into a spike. Let's make the spikes dangerous, too.
+Si tu appuies plusieurs fois de suite sur le bouton (A), tu risques d'atterrir dans  button more than once might send you into a spike. Let's make the spikes dangerous, too.
 
 
 ---
