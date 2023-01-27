@@ -1,33 +1,33 @@
 # sample
-* name: Game Maker Guide
-* description: Level up your game making skills by completing the tutorials in this guide.
+* name: Guide du Créateur de Jeu
+* description: Suis ces tutoriels pour apprendre à utiliser Arcade !
 
 ## interface
-* name: Learn to use MakeCode Arcade
+* name: Apprends à utiliser MakeCode Arcade
 * description: This will teach you how to complete tutorials in Microsoft MakeCode Arcade.
 * completionUrl: https://microsoft.github.io/pxt-skillmap-sample/certificates/understanding-arcade-tutorials.pdf
 
 ### interface-activity1
 
-* name: Learn to use MakeCode Arcade
+* name: Apprends à utiliser MakeCode Arcade
 * type: tutorial
-* description: Intro to our tutorial cards
-* tags: easy
+* description: Introduction aux tutoriels
+* tags: facile
 
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/interface/activity1 
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/interface/activity1.png
 
 ## space
-* name: Design a Space Explorer
-* description: Let's explore the depths of space! We'll design a vessel for space travel, add some enemies, and populate the universe with planets.
+* name: Crée un vaisseau spatial
+* description: Partons explorer les profondeurs de l'espace ! Nous allons créer un vaisseau pour voyager dans l'espace, ajouter quelques ennemis, et peupler l'univers avec des planètes.
 * completionUrl: https://microsoft.github.io/pxt-skillmap-sample/certificates/design-a-space-explorer.pdf
 
 ### space-activity1
 
-* name: Ship Design
+* name: Création du vaisseau
 * type: tutorial
-* description: Draw and code a spaceship!
-* tags: easy
+* description: Dessine et code un vaisseau spatial !
+* tags: facile
 * next: space-activity2
 
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity1
@@ -37,8 +37,8 @@
 
 * name: Projectiles
 * type: tutorial
-* description: Customize your ship with projectiles and effects.
-* tags: easy, projectiles, kinds
+* description: Personnalise ton vaisseau avec des projectiles et des effets.
+* tags: facile, projectiles, types
 * next: space-activity3
 
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity2
@@ -46,10 +46,10 @@
 
 ### space-activity3
 
-* name: Enemies
-* description: Watch out for danger! Add enemies and lives to your game.
+* name: Ennemies
+* description: Attention aux dangers de l'espace ! Ajoute des ennemis et une barre de vie à ton jeu.
 * type: tutorial
-* tags: easy, enemies, kinds
+* tags: facile, ennemies, types
 * next: space-activity4
 
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity3
@@ -57,10 +57,10 @@
 
 ### space-activity4
 
-* name: Fuel Up
+* name: Plein à ras bord
 * type: tutorial
-* description: Use an extension to add a fuel gauge to your ship. Make sure to refuel often!
-* tags: intermediate, extensions
+* description: Utilise une extension pour ajouter un jauge de fuel à ton vaisseau. Assure-toi de faire le plein régulièrement !
+* tags: intermédiaire, extensions
 
 
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/space/activity4
@@ -69,13 +69,13 @@
 
 
 ## platformer
-* name: Learn to Make a Platformer
-* description: A skillmap that takes you through how to build a platformer with multiple levels.
+* name: Apprend à coder un plateformer
+* description: Un parours qui t'accompagnes dans la construction d'un plateformer à plusieurs niveaux.
 * completionUrl: https://microsoft.github.io/pxt-skillmap-sample/certificates/learn-to-make-a-platformer.pdf
 
 ### platformer-activity1
 
-* name: Simple Platformer
+* name: Plateformer simple
 * type: tutorial
 * description: Learn how to make a player character that can jump and move around a tilemap.
 * url: https://github.com/microsoft/pxt-skillmap-sample/tutorials/platformer/activity1

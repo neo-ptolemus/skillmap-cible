@@ -1,4 +1,4 @@
-# Get to Know MakeCode Arcade 
+# Apprendre à connaître MakeCode Arcade
 
 
 ```ghost
@@ -34,144 +34,139 @@ game.onUpdateInterval(5000, function () {
 
 ![Psyched Monkey](/static/skillmap/interface/monkey.png "Psyched Monkey is Ready!" )
 
-**Are you ready to start coding your own games?**
+**Prêt·e à coder tes propres jeux ?**
 
-Complete this tutorial to learn how to:
-- follow tutorial prompts
-- find blocks in the toolbox
-- build code in the workspace
-- run your game on the built-in simulator 
+À la fin de ce tutoriel, tu auras appris à :
+- suivre les instructions du tutorials
+- trouver les blocs dans la boite à outils
+- assembler du code dans la zone de travail
+- exécuter ton jeu dans le simulateur
 
-Before you know it, you'll have an arcade game of your very own!
+Tu vas te retrouver avec ton propre jeu d'arcade avant d'avoir dit ouf !
 
-## step 1 
+## étape 1
 
-**⭐Welcome⭐**
+**⭐Bienvenue⭐**
 
-You've just discovered the most important part of following a tutorial — reading instructions!
+Tu viens de faire la chose la plus importante dans un tutoriel : lire les instructions !
 
-If you can't see all of the instructions, click **[v More...]** below to expand the box.
+Si tu n'arrives pas à lire toutes les instructions, appuie sur **[v Plus...]** pour agrandir la boite de texte.
 
 ---
 
-When you're ready to move to the next step, click **[ >  Next]** to continue.  
+Quand tu es prêt·e à passer à la prochaine étape, clique sur **[ > Suivant ]** pour continuer.
 
 
-## step 2
+## étape 2
 
-This box is where you'll find information for each step. 
+C'est dans cette boite que tu trouveras les informations pour chaque étape.
 
-If you don't find all of the info you need, 
-click the lightbulb to the right for an extra hint.
+Si tu ne trouves pas toutes les informations dont tu as besoin, 
+clique sur l'ampoule pour voir un indice supplémentaire.
 
 
 #### ~ tutorialhint 
 ```
-**You found the hints!**
+**Tu as trouvé les indices !**
 ```
 
 
-## Using the workspace
+## Utiliser l'espace de travail
 
-Now let's talk about your [__*workspace*__](#workIt "The area where you build code").
+Maintenant, parlons un peu de ton [__*espace de travail*__](#workIt "C'est à dire, la zone où tu construis ton code").
 
-Your workspace is the area below the instructions where you'll connect blocks to build your program. 
-Not all blocks will connect with one another, but we'll talk more about that later.
-
----
-
-🔲 Click inside the text area of the ``||game:splash "___"||`` block 
-and change the current sentence to something a little more exciting.
+Ton espace de travail est la zone à côté des instructions où tu vas connecter les blocs entre eux pour créer un programme.  
+Tous les blocs ne se connectent pas, mais on en parlera un peu plus tard.
 
 ---
 
-**Tip:** Did you notice that the first use of the word __workspace__ had a special look? 
-From time to time, we'll enhance important words. Roll your mouse over them to see a definition.
+🔲 Clique à l'intérieur de la zone de texte du bloc  ``||game:splash "___"||`` 
+etchange la phrase qui y est écrite en quelque chose d'un plus intéressant.
+
+---
+
+**Astuce :** Tu as remarqué que le premier "__espace de travail__" au début de cette étape a un style différent ? 
+De temps en temps, on va marquer les mots importants de cette façon. Passe ta souris dessus pour voir une définition.
 
 #### ~ tutorialhint 
 ```blocks
-game.splash("I like bananas!")
+game.splash("J'aime les bananes !")
 ```
 
 ```template
-game.splash("These blocks are in your workspace!")
+game.splash("Ces blocs sont dans ton espace de travail !")
 
 ```
 
-## Meet the Blocks  @unplugged
+## À la rencontre des blocs @unplugged
 
-Blocks can be dragged out from the  [__*toolbox*__](#tools "The strip to the left of your workspace that lists block categories."), 
+Les blocs peuvent être tirés de la [__*boite à outils*__](#tools "La colonne entre le tutoriel et la zone de tavail qui contient une liste de catégories."), 
 
-connected, duplicated, and deleted.
+connecté, dupliqué, et supprimé.
 
-Keep going to learn more about blocks.
+Continue pour en apprendre plus sur les blocs.
 
-![Block Animation](/static/skillmap/interface/use_blocks.gif "Blocks appear, duplicate, and delete." )
+![Block Animation](/static/skillmap/interface/use_blocks.gif "Ajout d'un bloc, connexion et suppression." )
 
 
 
-## Your Toolbox
+## Ta boite à outils
 
-**Blocks you need won't always be in the workspace to start.**
+**Les blocs dont tu as besoin ne seront pas toujours dans l'espace de travail dès le début.**
 
-In the instructions, block descriptions for the block you need will 
-often be highlighted in the same color as the toolbox 
-category where they live. 
+Dans les instructions, la description du bloc dont tu as besoin sera souvent 
+de la même couleur que la catégorie dans laquelle il se trouve.
 
-**For example:** We might use ``||game:splash "___"||`` when 
-we want you to find this:
+**Par exemple :** On peut écrire ``||game:splash "___"||`` si on veut que 
+tu trouves ça :
 
 ```block
 game.splash(" ")
 ```
 
-This block adds a [__*splash screen*__](#splasht "A full-screen message that shows while a program or level is loading") to your project.
+Ce bloc ajout un "[__*splash screen*__](#splasht "Un message qui s'affiche en plein écran pendant que le programme se charge.")" à ton projet.
 
-## Your Toolbox 2
+## Ta boite à outils 2
 
+**Regardons comment ça marche**
 
-
-**Let's see how this works**
-
-🔲 Find the 
-``||scene:set background color to [ ]||`` block and snap it at the top of 
-the **on start** container already in the workspace. 
+🔲 Trouve le bloc
+``||scene:set background color to [ ]||`` et connecte le tout en haut 
+dans le bloc **au démarrage** qui est déjà dans la zone de travail.
 
 #### ~ tutorialhint 
 ```blocks
 scene.setBackgroundColor(0)
-game.splash("My monkey is better than yours")
+game.splash("Mon âne est plus fort que le tiens")
 ```
 
 
 
-## The Exception
+## L'exception
 
-Every rule has an exception, so let's look at one of the blocks
-that doesn't share the same color as the category where it lives.
-
-The ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` block
-is red, but it lives inside the ``||sprites:Sprites||`` category.
-
----
-
-<!-- **Tip:** If you can't find the block you're looking for, try -->
-
-
-🔲 Snap ``||variables:set [my sprite] to sprite [ ] of kind [Player]||`` into the
-end of the **on start** container and 
-play around with it until a [__*sprite*__](#sprote "A 2-D image that moves on the screen") shows on the screen.
-
-*(Roll your mouse over the word __sprite__ above to see a definition.)*
+Toute règle a une exception, alors jetons un coup d'oeil à un des blocs qui
+n'est pas de la même couleur que sa catégorie.
+Le bloc ``||variables: définir [mySprite] à sprite [ ] de type [Player]||`` est rouge,
+mais il fait partie de la catégorie ``||sprites:Sprites||``.
 
 ---
 
-**Tip:** Drag ``||game:splash "___"||`` out of the ``||loops:on start||`` container
-and drop it back into the toolbox to delete it so your sprite will be revealed!
+<!-- **Astuce :** Si tu n'arrives pas à trouver le bloc dont tu as besoin, essaie -->
 
+
+🔲 Connecte ``||variables: définir [my sprite] à sprite [ ] de type [Player]||`` à la fin
+du bloc **au démarrage** et
+bidouille-le jusqu'à ce que le [__*sprite*__](#sprote "Une image 2D qui bouge sur l'écran") s'affiche sur l'écran du simulateur.
+
+*(Passe ta souris sur le mot __sprite__ ci-dessus pour voir une défintion)*
+
+---
+
+**Astuce :** Attrape le bloc ``||game:splash "___"||`` qui se trouve dans le bloc ``||loops: au démarrage||``
+et fais-le glisser sur la boite à outils pour le supprimer. Ton sprite va s'afficher !
 #### ~ tutorialhint
 
-![Open image editor](/static/skillmap/misc/open-image-editor-small.gif "How to open the image editor." )
+![Open image editor](/static/skillmap/misc/open-image-editor-small.gif "Comment ouvrir l'éditeur d'image." )
 
 ---
 
@@ -198,14 +193,13 @@ let mySprite = sprites.create(img`
 ```
 
 
-## Container Blocks
+## Blocs "Container"
 
-**Now let's look at different types of blocks and how to use them.** 
+**Maintenant, regardons les différents types de blocs et comment les utiliser.** 
 
-First, there are [__*container blocks*__](#blockIt "Blocks that hold other blocks"). 
-Container blocks have an edge at both the the top and bottom with an open space
-in the middle that allows other blocks to snap inside. Container blocks control 
-*when* the code inside runs. Here is an example:
+Tout d'abord, il y a les blocs [__*container*__](#blockIt "Les blocs qui contiennent d'autres blocs"). 
+Les containers ont un bord supérieur et inférieur, entourant un espace ouvert au milieu
+qui permet de connecter des blocs à l'intérieur. Les containers gèrent *quand* le code à l'intérieur est exécuté. Voici un exemple : 
 
 ```blocks
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -214,8 +208,8 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ```
 ---
 
-🔲  Find an ``||controller:on [A] button pressed ||`` container 
-block and drag it into the workspace. You will add to it in the next step.  
+🔲  Trouve le container ``||controller:quand bouton [A] est [appuyé] ||`` et place-le 
+dans l'espace de travail. On le complétera à l'étape suivante.
 
 #### ~ tutorialhint
 
@@ -225,14 +219,13 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 ```
 
-## Standard Blocks
+## Blocs "ordinaires"
 
-Next, there are [__*standard blocks*__](#sBlockIt "Single line blocks that make up the majority of most programs"). 
-Standard blocks are single-line blocks with notches at the top and bottom that
-allow them to click-in between other pieces. These blocks run in order from top 
-to bottom within the container that they're placed.
+Ensuite, il y a les blocs [__*ordinaires*__](#sBlockIt "Les blocs d'une seule ligne qui constituent la plus grande partie des programmes"). 
+Les blocs ordinaires sont des blocs d'une seule ligne avec une encoche en haut et en
+bas qui leur permet de se connecter avec d'autres blocs. Les blocs sont exécutés de haut en bas dans le container dans lequel ils sont placés.
 
-Here is an example of a standard block:
+Voici un exemple de bloc ordinaire :
 
 ```block
 let mySprite: Sprite = null;
@@ -241,9 +234,9 @@ mySprite.startEffect(effects.spray)
 
 ---
 
-🔲  Find a ``||sprites:[mySprite] start [spray] effect ||``  
-block and snap it into the  **on A button pressed** container...then 
-choose your own effect!
+🔲  Trouve le bloc ``||sprites:[mySprite] commencer effet [spray] ||``  
+et connecte-le dans le container  **quand bouton A est appuyé**... ensuite choisis
+ton effet préféré !
 
 #### ~ tutorialhint
 ```blocks
@@ -256,28 +249,27 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
 
 
-## Value Blocks
-
-Finally, we have [__*value blocks*__](#aBlockIt "special pieces that provide values for other blocks"). 
-Value blocks are special pieces that add information to other
-blocks. Sometimes they're pointy, sometimes they're rounded,
-but they always need another block to snap into. Value blocks look something like this:
+## Blocs valeurs
+Enfin, il existe les blocs [__*valeur*__](#aBlockIt "une pièce spéciale qui fournit des valeurs pour d'autres blocs"). 
+Les blocs valeurs sont des pièces spéciales qui joute des informations 
+aux autres blocs.
+Parfois ils sont pointus, parfois ils sont arrondis, mais ils ont toujours besoin d'être connectés dans un autre bloc.
+Les blocs valeurs ressemblent à ça :
 
 ![Value Blocks](/static/skillmap/interface/parameter-blocks.png "This is what the shape of an value block looks like" )
 
 ---
 
-🔲  Snap a ``||sprites:[mySprite] say [":)"] ||`` block into the end of the
-**on A button pressed** container.
+🔲  Connecte le bloc ``||sprites:[mySprite] dit [":)"] ||`` à la fin du container
+**quand bouton A appuyé**.
 
-🔲  Find the ``||game: ask for number [" "] ||`` value block and pop it inside to replace **":)"**.
-
+🔲  Trouve le bloc valeur ``||game: demande un nombre [" "] ||`` et connecte-le à la 
+place de **":)"**
 ---
 
-**Tip:** Value blocks have different shapes 
-depending on what kind of information they add. Each value will only
-fit in certain types of spaces. 
-
+**Astuce :** Les blocs valeurs ont des formes différentes suivant 
+le type d'information qu'ils contiennent.
+Chaque valeur ne peut rentrer que dans certains types de trous.
 #### ~ tutorialhint
 ```blocks
 let mySprite: Sprite = null;
@@ -287,28 +279,27 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 ```
 
-## Putting it Together
+## L'assemblage final
 
-🎨 Now get creative 🎨
+🎨 C'est le moment d'être créatif·ve ! 🎨
 
-Feel free to take a look at the extra blocks we've added into the toolbox. 
+N'hésite pas à jeter un coup d'oeil aux blocs que l'on a ajoutés dans la boite à outils.
 
-It's okay if you don't know what they all do.
-Play around with them and see how they affect your game!
+Ce n'est pas grave si tu ne sais pas ce qu'ils font.
+Bidouille-les un peu et regarde ce que ça fait au jeu !
 
 ---
 
-**Tip:** You can test your game whenever you want using the simulator
-to the left!  Use the refresh button (🔄) to reload it, and play your
-game using the buttons you've programmed!  
+**Astuce :** Tu peux tester ton jeu à n'importe quel moment grâce au simulateur à droite !
+Utilise le bouton rafraîchir (🔄) pour relancer le chargement, et joue avec ton jeu 
+en utilisant les boutons que tu as programmés !
 
 
 
 ## Conclusion 
 
-🎈 Congratulations 🎈 
+🎈 Félicitations 🎈 
 
-You've learned everything you need to know to graduate to a new tutorial.
-
-Now you can continue on and learn even more tricks for
-creating games with MakeCode Arcade!  
+Tu as appris tout ce que tu devais savoir pour passer à un nouveau tutoriel.
+Maintenant, tu vas pouvoir continuer à apprendre de nouvelles astuces pour 
+créer des jeux avec MakeCode Arcade !
