@@ -26,53 +26,35 @@ _💡 Ces deux blocs ont été ajoutés au container ``||loops: au démarrage||`
 _"Remplacer mon code"_ <br/>
 **tout en bas des instructions pour recharger le code de base.**
 
----
 
-- :mouse pointer: When you're ready to continue, click **Next**.
+## 3. Regarde le jeu !
 
-
-
-## 3. Look at the Game!
-
-Open the game window to take a look at the scene you've just set up.
+Ouvre le simulateur pour regarder la scène qu'on a préparée.
 
 ---
 
-To take a closer look, you can either click on the **preview window** in the lower-right corner of your screen, or click the **game window tab** above.
+Pour mieux voir, tu peuc cliquer sur le bouton carré à **droite du simulateur** en bas à droite.  
 
-![Click the Game Window tab to see your scene. ](/static/skillmap/racer/toggle-tab.gif "Don't forget to look at your game!")
----
-
-You should see the background with the spooky trees and a dark cave layer on top.
-
----
-
-- :mouse pointer: When you're ready to continue, click **Next**.
+Tu devrais voir l'arrière-plan avec les arbres flippants et les tuiles de la grotte par dessus.
 
 
 
+## 4. Ajoute le camion
 
-## 4. Add the Truck
-
-It's time to set up your monster truck.  To do this, we'll need to create a [__*sprite*__](#sprote "a 2-D image that moves on the screen").
+Il est temps de préparer ton monster truck. Pour cela, on va avoir besoin de créer un sprite[__*sprite*__](#sprote "une image en 2D qui bouge sur l'écran").
 
 ---
 
-- :paper plane:  From the ``||sprites:Sprites||`` category, drag <br/>
-``||variables(sprites):set [mySprite] to sprite [ ] of kind [Player]||`` <br/>
-to **the end** of the <br/>
-``||loops:on start||`` <br/>
-container.
+- :paper plane:  Dans la catégorie ``||sprites:Sprites||``, prend le bloc <br/>
+``||variables(sprites):définir [mySprite] à sprite [ ] de type [Player]||`` <br/>
+et place le à **la fin** du container <br/>
+``||loops:au démarrage||``. <br/>
 
-- :paint brush:  To choose a truck, click the empty grey box, then select **My Assets**.
+- :paint brush:  Pour choisir ton monster truck, clique sur le carré gris du bloc, puis choisis l'onglet **Mes Ressources**.
 
-![Set your sprite](/static/skillmap/racer/pick-truck.gif "Choose your image from the gallery")
+![Set your sprite](/static/skillmap/racer/pick-truck.gif "Choisis ton image dans la galerie")
 
-_💡 This image shows the **truck2** sprite, but you can use whichever one you want._
-
----
-
-- :mouse pointer: When you're ready to continue, click **Next**.
+_💡 Cette image montre le sprite **truck2**, mais tu peux choisir celui que tu veux._
 
 
 
