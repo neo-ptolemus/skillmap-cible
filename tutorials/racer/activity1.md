@@ -108,29 +108,24 @@ Ouvre le simulateur pour regarder à quoi le jeu ressemble maintenant.
 Normalement, le camion tombe au sol au début du jeu.
 
 
-## 7. Time to Drive
+## 7. L'heure de conduite
 
-In this game, your truck needs to start rolling as soon as the game starts.
+Dans ce jeu, il faut que ta voiture se mette à rouler dès le début.  
+  
+Pour ce faire, il faut que tu règles **vx**, c'est-à-dire sa _vélocité horizontale_ (= sa vitesse sur l'axe horizontal).
 
-To make that happen, you need to set its **vx** or _horizontal velocity_ (speed from side to side).
-
-![Set the speed](/static/skillmap/racer/velocity.gif "Choose vx(velocity x)")
-
----
-
-- :paper plane:  Drag a new <br/>
-``||sprites:set [mySprite] [x] to [0]||`` <br/>
-to **the end** of the <br/>
-``||loops:on start||`` container.
-
-- :mouse pointer: Click the dropdown to change ``||sprites:x||`` to ``||sprites:vx (velocity x)||``.
-
-- :mouse pointer: To push the sprite toward the right, replace **0** with **100**.
+![Set the speed](/static/skillmap/racer/velocity.gif "Choisis vx(vélocité selon x)")
 
 ---
 
-- :mouse pointer: When you're ready to continue, click **Next**.
+- :paper plane: Prend un nouveau bloc<br/>
+``||sprites:définir [mySprite] [x] à [0]||`` <br/>
+et connecte-le à **la fin** du containe<br/>
+``||loops:au démarrage||``.
 
+- :mouse pointer: Clique sur le menu déroulant pour changer ``||sprites:x||`` en ``||sprites:vx (vélocité en x)||``.
+
+- :mouse pointer: Pour pousser le sprite vers la droite, remplace **0** par **100**.
 
 
 ```blocks
