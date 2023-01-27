@@ -137,16 +137,12 @@ mySprite.ay = 500
 mySprite.vx = 100
 ```
 
-## 8. Try It!
+## 8. Essaie-le !
 
-Open the game window again and check out the game you have so far.
+Ouvre le simulateur et regarde un peu où en est le jeu maintenant.
 
-Notice that the arrow keys and (A) button don't work yet.
-The game only does what you've coded it to do.
-
----
-
-- :mouse pointer: When you're ready to continue, click **Next**.
+Tu as remarqué ? Les flèches et le bouton (A) ne marchent pas pour le moment.
+Le jeu fait seulement ce que tu lui as dit de faire jusqu'à maintenant.
 
 
 ## 9. Follow that Sprite
