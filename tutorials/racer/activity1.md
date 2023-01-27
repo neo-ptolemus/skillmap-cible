@@ -67,31 +67,26 @@ let mySprite = sprites.create(assets.image`truck2`, SpriteKind.Player)
 
 
 
-## 5. Add Gravity
+## 5. Ajoute de la gravité
 
-To make the game feel more realistic, it needs gravity.
+Pour rendre le jeu plus réaliste, il faut ajouter de la gravité.
 
-For that, we'll add [__*acceleration*__](#accel "increased speed in a direction")
-to "pull down" on the sprite.
+Pour cela, on va ajouter de l'[__*accélération*__](#accel "La variation de la vitesse au cours du temps dans une direction")
+pour "pousser" le sprite vers le bas.
 
 
-![Set the gravity](/static/skillmap/racer/acceleration.gif "Choose ay(acceleration y)")
-
----
-
-- :paper plane:  From the ``||sprites:Sprites||`` category, drag <br/>
-``||sprites:set [mySprite] [x] to [0]||`` <br/>
-to **the end** of the <br/>
-``||loops:on start||`` container.
-
-- :mouse pointer: Click the dropdown to change ``||sprites:x||`` to ``||sprites:ay (acceleration y)||``.
-
-- :mouse pointer: To pull the sprite toward the ground, replace **0** with **500**.
+![Set the gravity](/static/skillmap/racer/acceleration.gif "Choisis ay (accélération selon y)")
 
 ---
 
-- :mouse pointer: When you're ready to continue, click **Next**.
+- :paper plane: Dans la catégorie ``||sprites:Sprites||``, prend <br/>
+``||sprites:définir [mySprite] [x] à [0]||`` <br/>
+et place-le à **la fin** du container <br/>
+``||loops:au démarrage||``.
 
+- :mouse pointer: Clique sur le menu déroulant pour changer ``||sprites:x||`` en ``||sprites:ay (accélération selon y)||``.
+
+- :mouse pointer: Pour maintenir le sprite au sol, change **0** en **500**.
 
 
 ```blocks
@@ -104,18 +99,13 @@ mySprite.ay = 500
 
 
 
-## 6. Take a Look!
+## 6. Regarde un peu !
 
-Click back to the game window to see how everything is coming together.
-
----
-
-The truck should drop to the ground inside the cave.
+Ouvre le simulateur pour regarder à quoi le jeu ressemble maintenant.
 
 ---
 
-- :mouse pointer: When you're ready to continue, click **Next**.
-
+Normalement, le camion tombe au sol au début du jeu.
 
 
 ## 7. Time to Drive
