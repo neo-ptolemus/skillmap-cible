@@ -293,23 +293,18 @@ Quand l'ennemi rentre en collision avec le vaisseau, on veut qu'il nous enlève 
 
 ---
 
+- :puzzle piece: Prend le bloc ``||info:change life by [-1]||`` de la catégorie``||info:Info||`` et connecte le dans le container **quand player chevauche enemy**
+Il fera que notre vie descend de 1 point quand un ennemi touche le joueur.
 
-🔲 Grab the ``||info:change life by [-1]||`` block from the ``||info:Info||`` category and snap it into the 
-**on player overlaps enemy** container. 
-That removes a life from the player every time it's hit by an enemy.
+- :puzzle piece: Prend le bloc ``||sprites:détruire [mySprite] ⊕||`` et connecte-le juste en dessous du bloc précédent.
 
-🔲 Find the ``||sprites:destroy [mySprite] ⊕||`` block and snap it below the previous block. 
-
-🔲 To tell the **destroy** block that you want it to affect the overlapping enemy, 
-click on the ``||variables:otherSprite||`` variable from the top of the 
-**overlaps** container and drag it down to replace the 
-``||variables:mySprite||`` argument in ``||sprites:destroy [mySprite] ⊕||``.
-![Grabbing variable from block](/static/skillmap/space/give-var.gif "So that's how you do that!")
+- :pencil alternate: Pour dire au bloc **détruire** que tu veux que ça n'affecte que l'ennemi qui est touché, clique sur la variable ``||variables:otherSprite||`` variable en haut du containe **chevauche** et fais-le glisser pour remplacer l'argument
+``||variables:mySprite||`` dans ``||sprites:détruire [mySprite] ⊕||``.
+![Grabbing variable from block](/static/skillmap/space/give-var.gif "C'est comme ça qu'on fait !")
 
 ---
 
-**Tip:** Click the __⊕__ on the ``||sprites:destroy [otherSprite] ⊕||`` block to get
-a menu of effects to display upon your enemy's demise!
+**Astuce :** Clique sur le __⊕__ du bloc ``||sprites:détruire [otherSprite] ⊕||`` pour voir une liste d'effets à afficher à l'anéantissement d'un ennemi !
 
 ```blocks
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSprite) {
@@ -318,30 +313,25 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Enemy, function (sprite, otherSp
 })
 ```
 
-## Step 8
+## Étape 8
 
-**🌍 Time to save the world 🌏**
+**🌍 C'est l'heure de sauver le monde 🌏**
 
-Another **overlap** container will help our projectiles
-destroy our enemies on impact.
+Un autre container **chevauche** va nous permettre de détruire les ennemis à l'impact.
 
 ---
 
 
-🔲 Drag another ``||sprites:on [sprite] of kind [Player] overlaps [othersprite] of kind [Player]||`` 
-container into the workspace.
+- :mouse pointer: Prend un autre container ``||sprites:quand [sprite] de type [Player] chevauche [othersprite] de type [Player]||`` et ajoute-le à l'espace de travail.
 
-🔲 Change the first kind to ``||sprites:Enemy||`` and the second kind to
+- :pencil alternate: Change le premier type en ``||sprites:Enemy||`` et le second en
 ``||sprites:Projectile||``. 
 
-🔲 Inside, add two ``||sprites:destroy [mySprite] ⊕||`` blocks, then change the arguments
-so that one destroys the enemy (``||variables:sprite||``) and the other 
-destroys your projectile (``||variables:otherSprite||``).
+- :puzzle piece: À l'intérieur, ajoute deux blocs ``||sprites:détruire [mySprite] ⊕||`` et modifie les arguments pour que l'un détruise l'ennemi touché (``||variables:sprite||``) et l'autre, le projectile (``||variables:otherSprite||``).
 
 ---
 
-**Tip:** Don't forget to hit that __⊕__ button on the **destroy** block to get
-some spectacular effects when your projectile makes contact!
+**Astuce :** N'oublie pas de cliquer sur le bouton __⊕__ du bloc **détruire** pour ajouter quelques effets spéciaux à l'impact !
 
 ```blocks
 sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, otherSprite) {
@@ -350,12 +340,11 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, oth
 })
 ```
 
-## Complete 
+## Fini
 
-**Congratulations**
+👏 **Félicitations !** 👏 
 
-Now you have a full barrage of enemies to combat!  
-Don't forget to try your game in the simulator before you click "Finish".
+Maintenant, tu as toute une armé d'ennemis à combattre ! 
+N'oublie pas d'essayer ton jeu dans le simulateur avant d'appuyer sur "Terminé".
 
-Once you have it like you want it, click the finish button get back to 
-the skillmap where you can share with family and friends!
+Ton premier jeu est terminé, tu peux l'améliorer un peu avant de passer à la création du deuxièeme jeu, afin d'approfondir ce que tu as déjà appris.
