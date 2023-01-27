@@ -58,7 +58,6 @@
 
 ## Monster Racer
 * name: Monster Racer
-* layout: manual
 
 ### racer1
 * name: Prêt, Feu, Partez !
