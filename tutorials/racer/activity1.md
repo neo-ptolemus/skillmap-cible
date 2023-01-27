@@ -1,4 +1,4 @@
-# Ready, Set, Go!
+# Prêt, Feu, Partez !
 
 ## Introduction @showdialog
 
