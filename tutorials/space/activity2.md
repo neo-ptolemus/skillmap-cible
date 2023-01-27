@@ -57,6 +57,8 @@ Dans l'espace de travail, tu vas retrouver ton code pour faire bouger le vaissea
 N'oublie pas de 
 **tester ton jeu dans le simulateur** pour voir s'il fonctionne bien.
 
+---
+
 - :space shuttle: Vérifie le [__*sprite*__](#sprote "Une image en 2D qui bouge sur l'écran") de ton vaisseau pour voir s'il te plaît toujours.
 
 - :mouse pointer: Si tu veux faire des changements, clique sur le sprite dans le bloc et dessine un nouveau vaisseau OU Otransforme le en alien flottant grâce à l'éditeur de sprites ! 👽
@@ -69,6 +71,8 @@ N'oublie pas de
 
 On va lancer des projectiles quand on appuie sur le bouton **Ⓐ** !
 
+---
+
 - :mouse pointer: Prens un container ``||controller:quand bouton [A] est [appuyé] ||`` et fais le glisser dans l'espace de travail.
 
 - :puzzle piece: À l'intérieur, connecte un bloc   
@@ -76,6 +80,7 @@ On va lancer des projectiles quand on appuie sur le bouton **Ⓐ** !
 
 - :square: Clique sur le carré gris dans le nouveau bloc de projectile et dessine ta propre fusée explosive (ou choisis-en une dans l'onglet "Mes ressources").
 
+---
 
 **Astuce :** Exécute ton code dans le simulateur et essaie de tirer des projecyiles en appuyant sur le bouton **Ⓐ** (ou la touche espace).  Que ce passe-t-il ?
 
@@ -148,18 +153,18 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ## Les effet spéciaux
 💥 Mainteant place aux effets spéciaux 💥
 
+---
+
 - :puzzle piece: Trouve le bloc 
 ``||sprites:[mySprite] commencer effet [spray]||`` et connecte le à la fin du container ``||controller:on quand bouton [A] est [appuyé]||``.
 
-🔲 Change variable ``||variables:mySprite||`` to ``||variables:projectile||`` if you
-want the effects on your projectiles instead of on your ship.  
+- :mouse pointer: Change la variable ``||variables:mySprite||`` à ``||variables:projectile||`` si tu veux que l'effet soit appliqué aux projectiles à la place du vaisseau.
 
-🔲 Try different options from the ``||sprites:[spray]||`` dropdown menu and choose the one you like best!  
+- :caret square down outline: Essaie les différentes options du menu déroulant de ``||sprites:[spray]||`` et choisis celle que tu préfères !
 
 ---
 
-**Tip:** You can add another ``||sprites:[mySprite] start [spray] effect||`` block
-to add a separate effect on your spaceship
+**Astuce :** Tu peux ajouter un autre bloc ``||sprites:[mySprite] commencer effet [spray] ||`` pour ajouter un effet indépendant à ton vaisseau
 
 
 
@@ -184,12 +189,11 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ---
 
 
-## Complete 
+## Fini 
 
-🎆 **Congratulations** 🎆
+🎆 **Félicitations** 🎆
 
-You can now use the direction buttons to move your space plane and
-the **Ⓐ** button to lauch projectiles!
+Tu peux maintenant utiliser les boutons directionnels pour déplacer ton vaisseau
+et le bouton **Ⓐ** pour lancer des projectiles !
 
-Play your game in the simulator, then click "Finish" so you can publish
-to share with family and friends.
+Joue un peu à ton jeu dans le simulateur, puis clique sur "Terminé" pour passer à la suite.
