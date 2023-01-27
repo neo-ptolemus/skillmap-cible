@@ -2,27 +2,29 @@
 
 ## Introduction @showdialog
 
-Let's make a racer game!
+🏁 **Codons un jeu de course !** 🏁
 
-In this tutorial, you'll add a truck to your game and make it move through a cave.
+Dans ce tutoriel, tu vas ajouter un monster truck à ton jeu et le faire rouler dans une grotte.
 
-![Set your sprite](/static/skillmap/racer/racer1.gif "Look what we're about to make!")
-
-
-
-## 2. The Scene is Set
+![Set your sprite](/static/skillmap/racer/racer1.gif "Regarde ce qu'on va faire !")
 
 
-- :binoculars: We have already added **tilemap** and
-**background image** blocks to your workspace to set the scene in this activity.
 
-_💡 Both blocks have been added to the ``||loops: on start||`` container so they load as soon as the game starts.)_
+## 2. Le décor est planté
 
-- :mouse pointer: Keep scrolling down to read all of the instructions in this step before moving on to the next step.
 
-** If you found yourself playing with the tilemap and now it looks different, click** <br/>
-_"Replace my code"_ <br/>
-**beneath the instructions to get the original blocks back.**
+- :binoculars: On a déjà préparé les blocs pour la **tilemap** et l'
+**image de fond** pour que tout soit prêt pour commencer.
+
+~hint ❓ C'est quoi une tilemap ?
+Une tilemap (= carte de tuiles), c'est la carte du jeu qui est créée en assemblant des tuiles (en forme de blocs) les uns à côté des autres, comme dans les vieux Mario par exemple.
+hint~
+
+_💡 Ces deux blocs ont été ajoutés au container ``||loops: au démarrage||`` pour qu'ils se chargent dès le lancement du jeu.)_
+
+**Si tu as joué avec la tilemap et qu'elle toute déréglée maintenant, clique sur** <br/>
+_"Remplacer mon code"_ <br/>
+**tout en bas des instructions pour recharger le code de base.**
 
 ---
 
@@ -39,7 +41,6 @@ Open the game window to take a look at the scene you've just set up.
 To take a closer look, you can either click on the **preview window** in the lower-right corner of your screen, or click the **game window tab** above.
 
 ![Click the Game Window tab to see your scene. ](/static/skillmap/racer/toggle-tab.gif "Don't forget to look at your game!")
-
 ---
 
 You should see the background with the spooky trees and a dark cave layer on top.
