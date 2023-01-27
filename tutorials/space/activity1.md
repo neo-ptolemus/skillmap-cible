@@ -1,28 +1,21 @@
-# Space Explorer
+# La Guerre des Étoiles
 
 
 ## Introduction @unplugged
 
-** Let's explore the depths of space! **
+** Partons explorer les profondeurs de l'espace ! **
 
-In this tutorial, you'll design a spaceship for your journey.
+Dans ce tutoriel, tu va pouvoir créer ton propre vaisseau pour commencer ton voyage.
 
-![Flying through space](/static/skillmap/space/space1.gif "Blasting through a starfield" )
+![Flying through space](/static/skillmap/space/space1.gif "Un voyage intergalactique" )
 
-## Set the scene
-**Give 'em something to look at** 🔭
+## Planter le décor
+**Montre-leur quelque chose qui vaille la peine d'être regardé** 🔭
 
----
+- :mouse pointer: Dans la catégorie ``||scene:Scene||``, prend le bloc  ``||scene: démarrer effet [confetti] sur l'écran``
+et place-le à l'interieur du container ``||loops:au démarrage||`` qui est déjà sur l'espace de travail.
 
-
-🔲 Drag the ``||scene:start screen [confetti] effect ⊕||`` from the  ``||scene:Scene||`` category and
-into the ``||loops:on start||`` block that's already in the workspace.
-
-🔲 Next, select ``||scene:star field||`` (instead of ``||scene:confetti||``) from the dropdown
-and watch as you blast into space! 🚀 
-
-
----
+- :star: Ensuite, sélectionne ``||scene:champ étoilé||`` (au lieu de ``||scene:confetti||``) dans le menu déroulant. Regarde les étoiles défiler ! 🚀 
 
 
 ```blocks
@@ -32,22 +25,20 @@ effects.starField.startScreenEffect()
 
 
 
-## Draw your ship
-**🧑🏿‍🚀 Time to choose our ship! 👩🏾‍🚀**
+## Dessine ton vaisseau
+**🧑🏿‍🚀 C'est le moment de choisir ton vaisseau ! 👩🏾‍🚀**
 
----
+- :mouse pointer:Dans la catégorie ``||sprites:Sprites||``, prend le bloc ``||variables (sprites):définir [mySprite] à sprite [ ] de type [Player]||`` 
+et connecte-le à la fin du containe ``||loops:au démarrage||``.
 
-🔲 From the ``||sprites:Sprites||`` category, drag the ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` 
-block  and place it at the end of the ``||loops:on start||`` container.
+- :square:Clique sur le carré gris au milieu du bloc
+``||variables (sprites):définir [mySprite] à sprite [ ] de type [Player]||``
+pour dessiner ton propre vaisseau ! Tu es plutôt du genre vieux tas de féraille ou fusée blanche et épurée ?
 
-🔲 Click on the grey box in the middle of your
- ``||variables:set [mySprite] to sprite [ ] of kind [Player]||`` block
-to design a ship of your own! Are you a rusty pile of scraps or a sleek, futuristic rocket?
+--- 
 
----
-
-**Tip:** Don't feel like drawing your ship? Once you're in the sprite editor,
-flip to the gallery and choose from premade images.
+**Astuce :** Tu n'as pas envie de tout dessiner toi-même ?   
+Dans l'éditeur de sprite, clique sur l'onglet "Galerie" et choisis une des images déjà prête.
 
 ```blocks
 effects.starField.startScreenEffect()
@@ -72,17 +63,17 @@ let mySprite = sprites.create(img`
 `, SpriteKind.Player)
 ```
 
-## Control your ship
+## Contrôle ton vaisseau
 
-🌟 Let's get your ship moving 🌟
+🌟 Faison bouger ton vaisseau 🌟
 
 ---
 
-🔲 Find the ``||controller:move [mySprite] with buttons ⊕||`` block 
-and drag it into the bottom of the ``||loops:on start||`` container. 
+- :mouse pointer: Trouve le bloc ``||controller: déplacer [mySprite] avec les boutons ⊕||`` 
+et place-le à la fin du container ``||loops:au démarrage||``. 
 
-** Now try moving your ship around in the simulator! **  
-Your ship will move with the joystick, arrow keys, or **W A S D** keys.  
+** Maintenant, essaie de bouger ton vaisseau dans le simulateur !**  
+Ton vaisseau peut bouger avec le joystick ou les flèches du clavier.  
 
 
 
@@ -110,16 +101,11 @@ let mySprite = sprites.create(img`
 controller.moveSprite(mySprite)
 ```
 
-## Stay in screen
+## Rester sur l'écran
 
-**Uh-oh, if you move off screen, your ship disappears!**
+**Oh-oh... Si tu vas jusqu'aux bords de l'écran, ton vaisseau disparaît !**
 
----
-
-🔲 To keep your ship from exploring beyond the edges, find
- the ``||sprites:set [mySprite] stay in screen <on>||`` block and
-snap it in at the end of the program.
- 
+- :mouse pointer: Pour faire en sorte que ton vaisseau reste dans la limite de l'écran, trouve le bloc  ``||sprites:définir [mySprite] rester à l'écran <on>||`` et connecte le à la din programme.
 
 
 ```blocks
@@ -149,26 +135,23 @@ mySprite.setStayInScreen(true)
 ```
 
 
-## Finale @unplugged
+## Final @unplugged
 
-**Great Job!**
+**Joli travail !**
 
 ---
 
-Now be sure to play your game on the simulator
-before you click finish on the tutorial.  
+N'oublie pas de jouer un peu dans le simulateur avant de finir ce tutoriel.
 
-![You in space](/static/skillmap/space/space1end.gif "Blasting through your own game" )
+![You in space](/static/skillmap/space/space1end.gif "Voyage dans ton propre jeu" )
 
-Is everything how you want it? You can always go back and edit steps if you find out 
-that you'd like them to work differently.
-
+Tout est bien comme tu veux ? Tu peux toujours retourner en arrière et éditer les étapes, si tu veux faire des modifications.
 
 
 ## Byeeee
 
-** 🚀 That's it! 🚀**
+** 🚀 C'est tout ! 🚀**
 
-You're all set to travel the universe!
+Tu es fin prêt·e à voyager dans l'univers !
 
-Click **"Finish"** so you can publish your game to share with family and friends.
+Clique sur  **"Terminé"** pour passer à la suite.
