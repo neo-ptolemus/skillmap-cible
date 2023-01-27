@@ -1,5 +1,5 @@
 # Beginner Arcade
-* name: Beginner's Guide to Arcade Games
+* name: Coucou
 * description: Learn to create arcade games of your own by completing these tutorials.
 * infoUrl: /skillmap/educator-info/basic-map-info
 
@@ -12,7 +12,7 @@
 
 ### interface-activity1
 
-* name: Get to Know MakeCode Arcade
+* name: Coucoucoucoucoucoucouc
 * type: tutorial
 * description: Intro to the features and vocabulary used in Arcade tutorials.
 * tags: easy
