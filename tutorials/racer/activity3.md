@@ -1,39 +1,38 @@
-# Going Further
+# Toujours plus loin
 
 ## Introduction @showdialog
 
-In this tutorial, we'll customize your Monster Racer game to make it even more special.
+Dans ce tuoriel, on va customiser ton jeu pour le rendre encore plus spécial.
 
-![Animating your truck.](/static/skillmap/racer/racer3.gif "Look what we're about to make!")
-
-
-## 2. Review
+![Animating your truck.](/static/skillmap/racer/racer3.gif "Regarde ce qu'on va faire !")
 
 
-Take a look at the code that's already in your workspace.
+## 2. Révisions
 
-You should see the blocks that set up your truck and the blocks that make you jump.
+Jette un coup d'oeil œil au code qui est déà dans ton espace de travail.
 
-There should also be three **overlap** containers:
-- one that ends the game when you hit an acid pit
-- one that ends the game when you hit a spike
-- and one that ends the game when you reach the other side of the cave.
+Tu deavrais voir les blocs qui agissent sur ton monster truck and ceux qui te permettent de sauter.
 
-**Is something missing?** <br/>
-Click "Replace my code" below to replace the code in your workspace with recommended code.
+Il doit aussi y avoir trois containers **chevauche**:
+- un qui termine le jeu si tu tombe dans un puit d'acide
+- un qui termine le jeu si tu touches les pics
+- et un qui termine le jeu quand tu atteins le fond de la cave.
+
+**Il manque quelque chose ?** <br/>
+Clique sur "Remplacer mon code" pour que le nôtre apparaisse à la place.
 
 
 ## 3. Keep Rollin'
 
-Let's add a block to animate your truck.
+On va ajouter un bloc pour animer ton monster truck.
 
 ---
 
-- :mouse pointer: Click the **Advanced** label in the toolbox to reveal the ``||animation:Animation||`` category.
+- :mouse pointer: Clique sur l'onglet **Avancé** dans la boite à outils pour faire apparaître la catégorie ``||animation:Animation||``.
 
-- :sync: Drag the <br/>
-``||animation: animate [mySprite]||`` <br/>
- block into the end of the ``||loops:on start||`` container.
+- :sync: Ajoute le bloc <br/>
+``||animation: animer [mySprite]||`` <br/>
+  à la fin du container ``||loops:au démarrage||``.
 
 
 
@@ -56,17 +55,17 @@ false
 )
 ```
 
-## 4. Trucking Along
+## 4. Animer
 
-Choose your truck animation.
+Il est temps de choisir l'animation de ton monster truck.
 
 ---
 
-- :paint brush: Click the empty grey square to choose a truck animation from **My Assets**.
+- :paint brush: Clique sur le carré gris pour choisir une animation pour ton monster truck dans **Mes ressources**.
 
-- :mouse pointer: When the truck is selected, the interval should fill automatically, but you can replace it with a larger number if you want the animation to run more slowly.
+- :mouse pointer: Une fois que tu as choisi ton animation, la valeur **intervalle (ms)** devrait se compléter automatiquement, mais tu peux la remplacer avec un plus grand nombre si tu veux qu'elle se joue plus lentement.
 
-- :mouse pointer: Toggle **loop** to `<ON>` to keep the animation playing over and over for the whole game.
+- :mouse pointer: Fait baculer le bouton **en boucle** sur `<ON>` pour que l'animation se joue en boucle pendant tout le jeu..
 
 ```blocks
 tiles.setTilemap(tilemap`level1`)
@@ -84,64 +83,64 @@ true
 )
 ```
 
-## 5. Play it Again
+## 5. Une petite partie...
 
-Remember to play your game again each time you make a change.
+N'oublie pas de jouer à ton jeu à chaque fois que tu fais une modification.
 
-Can you see the effects of the code you just wrote?
+Tu as vu les effets du code que tu viens d'ajouter ?
 
 
-## 6. Cave Design
+## 6. Level Design
 
-Finally, you can edit the cave to have your own set of pits and spikes!
+Enfin, tu peux modifier la caverne pour créer ton propre niveau plein de puits d'acide et de de pics !
 
 ---
 
-- :mouse pointer: Click the tile shown in the ``||scene:set tilemap to [ ]||`` block already in your program.
+- :mouse pointer: Clique sur l'image qui se trouve dans le bloc ``||scene:définir plan des tuiles à [ ]||`` qui est déjà dans ton programme.
 
-The current tilemap will open in the **Tilemap Editor**.
+La carte s'ouvre dans l'**Éditeur de niveaux**.
 
-![Opening the tilmap](/static/skillmap/racer/racer-map.gif "Want to edit the tilemap?")
-
-
-
-## 7. Cave Walls
-
-Click the **wall** icon to solidify tiles.
-
-With the wall icon highlighted, you can select the eraser tool to remove walls, too!
-
-![Add or remove walls](/static/skillmap/racer/racer-walls.gif "Use the pencil to draw walls and the eraser to remove them. ")
+![Opening the tilmap](/static/skillmap/racer/racer-map.gif "Envie d'éditer le niveau ?")
 
 
 
+## 7. Les murs de la caverne.
 
-## 8. Rearranging
+Clique sur l'icône **mur** pour rendre certaines tuiles solides.
 
-Click the **tile** icon to load your pencil tool with the tiles you want to add to the map.
+Quand l'icône mur est en rouge, tu peux choisir la gomme pour enlever des murs, aussi !
 
-With the tile icon highlighted, you can select the eraser tool to remove tiles, too!
-
-The tiles for this game are listed under **My Tiles**.
-
-![Change tiles](/static/skillmap/racer/racer-custom.gif "Use the tile gallery to select tiles to add to the map.")
-
-
-## 9. Add More Code
-
-Remember, if you add other tiles to your game, you'll also need to add more <br/>
-``||scene:on [sprite] of kind [Player] overlaps [ ] at [location]||`` <br/>
-containers to activate them!
+![Add or remove walls](/static/skillmap/racer/racer-walls.gif "Utilise le crayon pour dessiner des murs et la gomme pour les effacer !")
 
 
 
-## Finale
 
-Excellent!
+## 8. Refaire la déco
 
-Try playing your game in the full screen game window – jump over obstacles and make it to the finish line!
+Clique sur l'icône **tuile** pour choisir la tuile à dessiner avec ton crayon.
 
-When you're finished, click **Done** to finish the skillmap and share your game with family and friends.
+Quand l'icône tuile est sélectionnée, tu peux aussi choisir la gomme pour effacer des tuiles !
+
+Les tuiles pour ce jeu sont disponibles dans **My Tiles**.
+
+![Change tiles](/static/skillmap/racer/racer-custom.gif "Utilise la galerie de tuiles pour sélectionner les tuiles à ajouter à la carte du niveau.")
+
+
+## 9. Encore un peu de Code
+
+Attention, si tu ajoute de nouvelles tuiles à ton jeu (comme les pics au sol par exemple), il faut que tu ajoutes d'autres container<br/>
+``||scene:lorsque [sprite] de type [Player] chevauche [ ] à [location]||`` <br/>
+pour les activer !
+
+
+
+## Le Grand Final
+
+Bravo !
+
+Essaie ton jeu en plein écran - saut par-dessus les obstacles et essaie d'arriver à la ligne d'arrivée !
+
+Quand tu as fini, clique sur **Terminé** pour terminer le tutoriel. 
 
 
 

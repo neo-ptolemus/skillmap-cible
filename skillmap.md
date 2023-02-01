@@ -80,7 +80,7 @@
 ### racer3
 * name: Toujours plus loin
 * type: tutorial
-* description: Customize your game and make it your own by adding animations and changing your tilemap.
+* description: Personnalise ton jeu en ajoutant dans animations et en modifiant la carte du jeu !
 * url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/racer/activity3
 * tags: facile, ennemis, chevauche, vies
 * imageUrl: /static/skillmap/racer/racer3.gif
