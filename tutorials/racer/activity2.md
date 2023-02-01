@@ -83,15 +83,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`acid`, function (sprite, loca
 
 ## 6. Les pics
 
-Si tu appuies plusieurs fois de suite sur le bouton (A), tu risques d'atterrir dans  button more than once might send you into a spike. Let's make the spikes dangerous, too.
-
+Si tu appuies plusieurs fois de suite sur le bouton (A), tu risques d'atterrir dans les pics. Maintenant, rendon-les dangereux, eux-aussi !
 
 ---
 
-- :mouse pointer:  Follow the same steps to end the game when your sprite overlaps the **spikes** as you did for the **acid** tile. <br/>
-![Avoid the spikes!](/static/skillmap/racer/spikes.png "Avoid the spike tiles")
+- :mouse pointer: Suis les mêmes étapes pour que le jeu s'arrête quand ton sprite chavauche les **pics**, comme tu l'as fait pour les tuiles d'**acide**. <br/>
+![Avoid the spikes!](/static/skillmap/racer/spikes.png "Évite les pic !")
 
-_💡 Need a little help figuring out what this step should look like? Click the lightbulb button below for a peek at the blocks we recommend._
+_💡 Tu as besoin d'aide pour te rappeler les étapes qu'il faut suivre ? Clique sur l'ampoule ci-dessous pour voir quels blocs on te recommande d'utiliser._
 
 
 ```blocks
@@ -102,31 +101,29 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`spikes`, function (sprite, lo
 
 
 
-## 7. Take a Look!
+## 7. Jette un oeil !
 
-Click back to the game window to see how everything is coming together.
-
----
-
-You should be able to jump the acid pits by pressing the (A) button and the game should end when you hit the acid or a spike.
-
-
-
-## 8. End of the Tunnel
-
-We have a way to lose, now we need a way to win.
-
-At the end of the cave, there is a set of pure black **empty cave** tiles.
+Clique sur le simulateur pour vérifier que tout marche normalement.
 
 ---
 
-- :mouse pointer:  Follow the same steps to end the game when your sprite overlaps
-an **empty cave** tile as you did for the **acid** tile.
+Tu devrais pouvoir sauter au-dessus des flaques d'acide en appuyant sur le bouton (A) et le jeu s'arrête quand tu touches l'acide ou les pics.
+
+
+## 8. Le bout du tunnel
+
+On peut perdre, maintenant il faut ajouter le moyen de gagner !
+
+À la fin de la cave, il y a une montagne de tuiles "**empty cave**" noires.
+
+---
+
+- :mouse pointer:  Ajoute un container qui s'active quand ton sprite touche les tuiles **empty caves**. C'est le même que celui qu'on a utilisé pour les tuiles d'**acide** par exemple.
 <br/>
-![Get to the cave](/static/skillmap/racer/cave.png "Choose the cave tile")
+![Get to the cave](/static/skillmap/racer/cave.png "Choisis la tuile de caverne")
 
 
-- :mouse pointer: Finish by changing the ``||game: game over <LOSE>||`` to say ``||game: game over <WIN>||``.
+- :mouse pointer: Ajoute un bloc ``||game: jeu terminé <PERDU>||`` et modifie-le pour qu'il affiche ``||game: jeu perdu <VICTOIRE>||``.
 
 
 ```blocks
@@ -136,15 +133,14 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`empty cave`, function (sprite
 ```
 
 
-## Finale
+## La fin
 
-Congratulations!
+Félicitations !
 
-You've created your own Monster Racer game!
+Tu as créé ton propre jeu **Monster Race** !
 
-Race to the end of the cave and once you're finished playing,
-click **Done** to head back out to the skillmap where you can
-play the next level and add customizations to your game.
+Essaie d'atteindre le fond de la caverne et quand tu as fini de jouer,
+clique sur **Terminé** pour revenir à la carte.
 
 
 ```template
