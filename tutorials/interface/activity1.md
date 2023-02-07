@@ -260,11 +260,10 @@ Les blocs valeurs ressemblent à ça :
 
 ---
 
-🔲  Connecte le bloc ``||sprites:[mySprite] dit [":)"] ||`` à la fin du container
-**quand bouton A appuyé**.
+🔲  Connecte le bloc ``||sprites:[mySprite] dit [":)"] ||`` à la fin du container **quand bouton A appuyé**.
 
-🔲  Trouve le bloc valeur ``||game: demande un nombre [" "] ||`` et connecte-le à la 
-place de **":)"**
+🔲  Trouve le bloc valeur ``||game: demande un nombre [" "] ||`` et connecte-le à la place de **":)"**.
+
 ---
 
 **Astuce :** Les blocs valeurs ont des formes différentes suivant 
