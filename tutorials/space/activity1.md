@@ -12,7 +12,7 @@ Dans ce tutoriel, tu va pouvoir créer ton propre vaisseau pour commencer ton vo
 ## Planter le décor
 **Montre-leur quelque chose qui vaille la peine d'être regardé** 🔭
 
-- :mouse pointer: Dans la catégorie ``||scene:Scene||``, prend le bloc  ``||scene: démarrer effet [confetti] sur l'écran``
+- :mouse pointer: Dans la catégorie ``||scene:Scene||``, prends le bloc  ``||scene: démarrer effet [confetti] sur l'écran``
 et place-le à l'interieur du container ``||loops:au démarrage||`` qui est déjà sur l'espace de travail.
 
 - :star: Ensuite, sélectionne ``||scene:champ étoilé||`` (au lieu de ``||scene:confetti||``) dans le menu déroulant. Regarde les étoiles défiler ! 🚀 
@@ -28,10 +28,10 @@ effects.starField.startScreenEffect()
 ## Dessine ton vaisseau
 **🧑🏿‍🚀 C'est le moment de choisir ton vaisseau ! 👩🏾‍🚀**
 
-- :mouse pointer:Dans la catégorie ``||sprites:Sprites||``, prend le bloc ``||variables (sprites):définir [mySprite] à sprite [ ] de type [Player]||`` 
-et connecte-le à la fin du containe ``||loops:au démarrage||``.
+- :mouse pointer: Dans la catégorie ``||sprites:Sprites||``, prends le bloc ``||variables (sprites):définir [mySprite] à sprite [ ] de type [Player]||`` 
+et connecte-le à la fin du container ``||loops:au démarrage||``.
 
-- :square:Clique sur le carré gris au milieu du bloc
+- :square: Clique sur le carré gris au milieu du bloc
 ``||variables (sprites):définir [mySprite] à sprite [ ] de type [Player]||``
 pour dessiner ton propre vaisseau ! Tu es plutôt du genre vieux tas de féraille ou fusée blanche et épurée ?
 
@@ -105,7 +105,7 @@ controller.moveSprite(mySprite)
 
 **Oh-oh... Si tu vas jusqu'aux bords de l'écran, ton vaisseau disparaît !**
 
-- :mouse pointer: Pour faire en sorte que ton vaisseau reste dans la limite de l'écran, trouve le bloc  ``||sprites:définir [mySprite] rester à l'écran <on>||`` et connecte le à la din programme.
+- :mouse pointer: Pour faire en sorte que ton vaisseau reste dans la limite de l'écran, trouve le bloc  ``||sprites:définir [mySprite] rester à l'écran <on>||`` et connecte le à la fin du programme.
 
 
 ```blocks
@@ -154,4 +154,4 @@ Tout est bien comme tu veux ? Tu peux toujours retourner en arrière et éditer 
 
 Tu es fin prêt·e à voyager dans l'univers !
 
-Clique sur  **"Terminé"** pour passer à la suite.
+Clique sur **"Terminé"** pour passer à la suite.
