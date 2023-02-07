@@ -219,7 +219,7 @@ game.onUpdateInterval(1000, function () {
 
 ## Étape 5
 
-Tu as peut-être envie d'ajouter plein de types différents d'annemis qui sortent du haut de l'écran.
+Tu as peut-être envie d'ajouter plein de types d'ennemis différents qui sortent du haut de l'écran.
 On peut faire en sorte qu'ils aient tous le même comportement en utilisant la classe "**Enemy**" [__*class*__](#withClass "une catégorie qu'on donne à un groupe de sprites qui a le même comportement").
 
 ---
@@ -292,12 +292,12 @@ Quand l'ennemi rentre en collision avec le vaisseau, on veut qu'il nous enlève 
 
 ---
 
-- :puzzle piece: Prend le bloc ``||info:change life by [-1]||`` de la catégorie``||info:Info||`` et connecte le dans le container **quand player chevauche enemy**
+- :puzzle piece: Prends le bloc ``||info:change life by [-1]||`` de la catégorie``||info:Info||`` et connecte le dans le container **quand player chevauche enemy**
 Il fera que notre vie descend de 1 point quand un ennemi touche le joueur.
 
-- :puzzle piece: Prend le bloc ``||sprites:détruire [mySprite] ⊕||`` et connecte-le juste en dessous du bloc précédent.
+- :puzzle piece: Prends le bloc ``||sprites:détruire [mySprite] ⊕||`` et connecte-le juste en dessous du bloc précédent.
 
-- :pencil alternate: Pour dire au bloc **détruire** que tu veux que ça n'affecte que l'ennemi qui est touché, clique sur la variable ``||variables:otherSprite||`` variable en haut du containe **chevauche** et fais-le glisser pour remplacer l'argument
+- :pencil alternate: Pour dire au bloc **détruire** que tu veux que ça n'affecte que l'ennemi qui est touché, clique sur la variable ``||variables:otherSprite||`` variable en haut du container **chevauche** et fais-le glisser pour remplacer l'argument
 ``||variables:mySprite||`` dans ``||sprites:détruire [mySprite] ⊕||``.
 ![Grabbing variable from block](/static/skillmap/space/give-var.gif "C'est comme ça qu'on fait !")
 
@@ -321,7 +321,7 @@ Un autre container **chevauche** va nous permettre de détruire les ennemis à l
 ---
 
 
-- :mouse pointer: Prend un autre container ``||sprites:quand [sprite] de type [Player] chevauche [othersprite] de type [Player]||`` et ajoute-le à l'espace de travail.
+- :mouse pointer: Prends un autre container ``||sprites:quand [sprite] de type [Player] chevauche [othersprite] de type [Player]||`` et ajoute-le à l'espace de travail.
 
 - :pencil alternate: Change le premier type en ``||sprites:Enemy||`` et le second en
 ``||sprites:Projectile||``. 
@@ -343,7 +343,7 @@ sprites.onOverlap(SpriteKind.Enemy, SpriteKind.Projectile, function (sprite, oth
 
 👏 **Félicitations !** 👏 
 
-Maintenant, tu as toute une armé d'ennemis à combattre ! 
+Maintenant, tu as toute une armée d'ennemis à combattre ! 
 N'oublie pas d'essayer ton jeu dans le simulateur avant d'appuyer sur "Terminé".
 
 Ton premier jeu est terminé, tu peux l'améliorer un peu avant de passer à la création du deuxièeme jeu, afin d'approfondir ce que tu as déjà appris.
