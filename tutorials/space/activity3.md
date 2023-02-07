@@ -94,10 +94,9 @@ game.onUpdateInterval(1000, function () {
 
 - :mouse pointer: Dans la catégorie ``||sprites:Sprites||``, cherche le bloc
 ``||variables(sprites): définir [projectile2] à projectile [ ] depuis bord avec vx [50] vy [50]||`` 
-et glisse le dans le container **quand mise à jour du jeu**
+et glisse-le dans le container **quand mise à jour du jeu**
 
-- :pencil alternate: Clique sur la valeur ``||variables:[projectile2]||`` dans le bloc que tu viens de placer et sélectionne "
-select "Renommer la variable..."  
+- :pencil alternate: Clique sur la valeur ``||variables:[projectile2]||`` dans le bloc que tu viens de placer et sélectionne "Renommer la variable..."  
 
 - :tag: Change le nom de la variable en ``||variables:myEnemy||`` pour qu'on sache que ce sont les méchants
 
@@ -132,7 +131,7 @@ game.onUpdateInterval(1000, function () {
 ---
 
 - :square: Clique sur le carré gris dans le bloc pour dessiner le sprite de l'ennemi
-(Tu peux aussi en choisir un dans la Galerie) 
+(Tu peux aussi en choisir un dans la Gallerie) 
 
 - :pencil alternate: Bidouille les valeurs de **vx** et **vy** de **myEnemy** jusqu'à ce que les sprites descendent l'écran.
 
@@ -165,8 +164,8 @@ game.onUpdateInterval(1000, function () {
 ## Étape 4
 
 
-Les ennemis n'ont pas beaucoup de chances de toucher le joueur s'ils restent coller au bord...
-On va ajouter un peu de surprise en utilisant des [__*nombres aléatoires*__](#randos "des nombres tirés au hasard") .
+Les ennemis n'ont pas beaucoup de chances de toucher le joueur s'ils restent collés au bord...
+On va rendre ça plus intéressant en utilisant des [__*nombres aléatoires*__](#randos "des nombres tirés au hasard") .
 
 ---
 
