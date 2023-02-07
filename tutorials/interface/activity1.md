@@ -37,7 +37,7 @@ game.onUpdateInterval(5000, function () {
 **Prêt·e à coder tes propres jeux ?**
 
 À la fin de ce tutoriel, tu auras appris à :
-- suivre les instructions du tutorials
+- suivre les instructions du tutoriel
 - trouver les blocs dans la boite à outils
 - assembler du code dans la zone de travail
 - exécuter ton jeu dans le simulateur
@@ -67,7 +67,7 @@ clique sur l'ampoule pour voir un indice supplémentaire.
 
 #### ~ tutorialhint 
 ```
-**Tu as trouvé les indices !**
+Tu as trouvé les indices !
 ```
 
 
@@ -81,7 +81,7 @@ Tous les blocs ne se connectent pas, mais on en parlera un peu plus tard.
 ---
 
 🔲 Clique à l'intérieur de la zone de texte du bloc  ``||game:splash "___"||`` 
-etchange la phrase qui y est écrite en quelque chose d'un plus intéressant.
+et change la phrase qui y est écrite en quelque chose d'un plus intéressant.
 
 ---
 
@@ -102,7 +102,7 @@ game.splash("Ces blocs sont dans ton espace de travail !")
 
 Les blocs peuvent être tirés de la [__*boite à outils*__](#tools "La colonne entre le tutoriel et la zone de tavail qui contient une liste de catégories."), 
 
-connecté, dupliqué, et supprimé.
+connectés, dupliqués, et supprimés.
 
 Continue pour en apprendre plus sur les blocs.
 
@@ -117,14 +117,14 @@ Continue pour en apprendre plus sur les blocs.
 Dans les instructions, la description du bloc dont tu as besoin sera souvent 
 de la même couleur que la catégorie dans laquelle il se trouve.
 
-**Par exemple :** On peut écrire ``||game:splash "___"||`` si on veut que 
+**Par exemple :** On écrira ``||game:splash "___"||`` si on veut que 
 tu trouves ça :
 
 ```block
 game.splash(" ")
 ```
 
-Ce bloc ajout un "[__*splash screen*__](#splasht "Un message qui s'affiche en plein écran pendant que le programme se charge.")" à ton projet.
+Ce bloc ajoute un "[__*splash screen*__](#splasht "Un message qui s'affiche en plein écran pendant que le programme se charge.")" à ton projet.
 
 ## Ta boite à outils 2
 
@@ -151,7 +151,7 @@ mais il fait partie de la catégorie ``||sprites:Sprites||``.
 
 ---
 
-<!-- **Astuce :** Si tu n'arrives pas à trouver le bloc dont tu as besoin, essaie -->
+<!-- **Astuce :** Si tu n'arrives pas à trouver le bloc dont tu as besoin, essaie : -->
 
 
 🔲 Connecte ``||variables: définir [my sprite] à sprite [ ] de type [Player]||`` à la fin
@@ -251,7 +251,7 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 
 ## Blocs valeurs
 Enfin, il existe les blocs [__*valeur*__](#aBlockIt "une pièce spéciale qui fournit des valeurs pour d'autres blocs"). 
-Les blocs valeurs sont des pièces spéciales qui joute des informations 
+Les blocs valeurs sont des pièces spéciales qui ajoutent des informations 
 aux autres blocs.
 Parfois ils sont pointus, parfois ils sont arrondis, mais ils ont toujours besoin d'être connectés dans un autre bloc.
 Les blocs valeurs ressemblent à ça :
