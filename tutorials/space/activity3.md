@@ -67,7 +67,7 @@ scene.cameraShake(4, 500)
 
 **Les voyages intergalactiques, ça peut être dangereux !**
 
-Ajoutons quelques ennemis que ton vaisseau dtoi éviter.
+Ajoutons quelques ennemis que ton vaisseau va devoir éviter.
 Ça peut être des astéroïdes, des débris radioactifs ou des requins de l'espace très énervés !
 
 ![Releasing projectiles](/static/skillmap/space/projectiles.gif "Here, enemy ship. Would you like to borrow an asteroid?")

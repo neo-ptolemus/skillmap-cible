@@ -51,7 +51,7 @@ Prêt·e à customiser ton vaisseau ?
 Dans ce tutoriel, tu vas apprendre à envoyer des projectiles quand tu appuies sur le bouton **Ⓐ**, et à ajouter quelques effets spéciaux.
 
 
-## Customiser les sprites.
+## Customise les sprites.
 
 Dans l'espace de travail, tu vas retrouver ton code pour faire bouger le vaisseau.
 N'oublie pas de 
@@ -61,11 +61,11 @@ N'oublie pas de
 
 - :space shuttle: Vérifie le [__*sprite*__](#sprote "Une image en 2D qui bouge sur l'écran") de ton vaisseau pour voir s'il te plaît toujours.
 
-- :mouse pointer: Si tu veux faire des changements, clique sur le sprite dans le bloc et dessine un nouveau vaisseau OU Otransforme le en alien flottant grâce à l'éditeur de sprites ! 👽
+- :mouse pointer: Si tu veux faire des changements, clique sur le sprite dans le bloc et dessine un nouveau vaisseau OU transforme-le en OVNI grâce à l'éditeur de sprites ! 👽
 
 
 
-## Ajoute un événement bouton
+## Ajoute un événement
 
 **C'est parti pour l'action !**
 
@@ -73,7 +73,7 @@ On va lancer des projectiles quand on appuie sur le bouton **Ⓐ** !
 
 ---
 
-- :mouse pointer: Prens un container ``||controller:quand bouton [A] est [appuyé] ||`` et fais le glisser dans l'espace de travail.
+- :mouse pointer: Prends un container ``||controller:quand bouton [A] est [appuyé] ||`` et fais le glisser dans l'espace de travail.
 
 - :puzzle piece: À l'intérieur, connecte un bloc   
 ``||variables (sprites):définir [projectile] à projectile [ ] depuis [mySprite] avec vx [50] vy [50]||``.
@@ -82,7 +82,7 @@ On va lancer des projectiles quand on appuie sur le bouton **Ⓐ** !
 
 ---
 
-**Astuce :** Exécute ton code dans le simulateur et essaie de tirer des projecyiles en appuyant sur le bouton **Ⓐ** (ou la touche espace).  Que ce passe-t-il ?
+**Astuce :** Exécute ton code dans le simulateur et essaie de tirer des projectiles en appuyant sur le bouton **Ⓐ** (ou la touche espace).  Que ce passe-t-il ?
 
 ```blocks
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -103,7 +103,7 @@ let projectile = sprites.createProjectileFromSprite(img`
 ## Retrospective @unplugged
 
 Tu as probablement remarqué que tes projetciles partent vers le bas.
-Ce n'est pas *très utile* si tes ennemis arrive par le ahut ! On va essayer de comprendre ce qu'il se passe.
+Ce n'est pas *très utile* si tes ennemis arrivent devant toi ! On va essayer de comprendre ce qu'il se passe.
 
 ---
 
@@ -120,18 +120,18 @@ let projectile = sprites.createProjectileFromSprite(img`.`, mySprite, 50, 50)
 ## Quelques mots sur la vélocité. @unplugged
 
 Pour changer la direction de tes projectiles, tu dois modifier la vitesse à laquelle ils vont dans une certaine direction.
-Dans MakeCode Arcade, on appelle ça la  [__*velocity*__](#vélocité "vitesse dans une direction donnée").
+Dans MakeCode Arcade, on appelle ça la  [__*vélocité*__](#vélocité "vitesse dans une direction donnée").
 
 - Pour régler si le projectile va à gauche ou à droite, il faut modifier [__*vx*__](#whatX "vitesse de gauche à droite")  
 - Pour régler si le projectile va en haut ou en bas, il faut modifier [__*vy*__](#whatX "vitesse de haut en bas")  
-- Que ce passe-t-il si tu changes les deux ?
+- Que se passe-t-il si tu changes les deux ?
 
 ![Directional Projectiles](/static/skillmap/space/vxvy.gif "Tourne et tourne et tourne")
 
 
 ## Créer un projectile
 
-Bidouille les valeurs de __vx__ and __vy__ jusqu'à ce qu'ils aillent vers le haut avec suffisemment de vitesse.
+Bidouille les valeurs de __vx__ and __vy__ jusqu'à ce qu'ils aillent vers le haut avec assez de vitesse.
 
 ```blocks
 let mySprite: Sprite = null
@@ -151,12 +151,12 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 ```
 
 ## Les effet spéciaux
-💥 Mainteant place aux effets spéciaux 💥
+💥 Maintenant place aux effets spéciaux 💥
 
 ---
 
 - :puzzle piece: Trouve le bloc 
-``||sprites:[mySprite] commencer effet [spray]||`` et connecte le à la fin du container ``||controller:on quand bouton [A] est [appuyé]||``.
+``||sprites:[mySprite] commencer effet [spray]||`` et connecte-le à la fin du container ``||controller:on quand bouton [A] est [appuyé]||``.
 
 - :mouse pointer: Change la variable ``||variables:mySprite||`` à ``||variables:projectile||`` si tu veux que l'effet soit appliqué aux projectiles à la place du vaisseau.
 
