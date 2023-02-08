@@ -185,9 +185,8 @@ Connecte-le à la place du **0** dans le bloc  **définir myEnemy x**.
 
 ---
 
-hint~❓ Pourquoi 5 et 155 ?
+❓ Pourquoi 5 et 155 ?
 La largeur de l'écran d'Arcade est de 160px. Mais comme le placement des sprites se fait au milieu de l'image, à 0 et 160 on ne verrait que la moitié de l'ennemi.
-~hint
 
 ```blocks
 let myEnemy: Sprite = null
