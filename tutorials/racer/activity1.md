@@ -13,14 +13,12 @@ Dans ce tutoriel, tu vas ajouter un monster truck à ton jeu et le faire rouler 
 ## 2. Le décor est planté
 
 
-- :binoculars: On a déjà préparé les blocs pour la **tilemap** et l'
-**image de fond** pour que tout soit prêt pour commencer.
+- :binoculars: On a déjà préparé les blocs pour la **tilemap** et l' **image de fond** pour que tout soit prêt pour commencer.
 
 ~hint ❓ C'est quoi une tilemap ?
-Une tilemap (= carte de tuiles), c'est la carte du jeu qui est créée en assemblant des tuiles (en forme de blocs) les uns à côté des autres, comme dans les vieux Mario par exemple.
-hint~
+Une tilemap (= carte de tuiles), c'est la carte du jeu qui est créée en assemblant des tuiles (en forme de blocs) les uns à côté des autres. Un peu comme dans Minecraft, mais en 2D !
 
-_💡 Ces deux blocs ont été ajoutés au container ``||loops: au démarrage||`` pour qu'ils se chargent dès le lancement du jeu.)_
+_💡 Ces deux blocs ont été ajoutés au container ``||loops: au démarrage||`` pour qu'ils se chargent dès le lancement du jeu._
 
 **Si tu as joué avec la tilemap et qu'elle toute déréglée maintenant, clique sur** <br/>
 _"Remplacer mon code"_ <br/>
@@ -33,7 +31,7 @@ Ouvre le simulateur pour regarder la scène qu'on a préparée.
 
 ---
 
-Pour mieux voir, tu peuc cliquer sur le bouton carré à **droite du simulateur** en bas à droite.  
+Pour mieux voir, tu peux cliquer sur le bouton carré à **droite du simulateur** en bas à droite.  
 
 Tu devrais voir l'arrière-plan avec les arbres flippants et les tuiles de la grotte par dessus.
 
@@ -45,7 +43,7 @@ Il est temps de préparer ton monster truck. Pour cela, on va avoir besoin de cr
 
 ---
 
-- :paper plane:  Dans la catégorie ``||sprites:Sprites||``, prend le bloc <br/>
+- :paper plane:  Dans la catégorie ``||sprites:Sprites||``, prends le bloc <br/>
 ``||variables(sprites):définir [mySprite] à sprite [ ] de type [Player]||`` <br/>
 et place le à **la fin** du container <br/>
 ``||loops:au démarrage||``. <br/>
@@ -79,7 +77,7 @@ pour "pousser" le sprite vers le bas.
 
 ---
 
-- :paper plane: Dans la catégorie ``||sprites:Sprites||``, prend <br/>
+- :paper plane: Dans la catégorie ``||sprites:Sprites||``, prends <br/>
 ``||sprites:définir [mySprite] [x] à [0]||`` <br/>
 et place-le à **la fin** du container <br/>
 ``||loops:au démarrage||``.
@@ -118,7 +116,7 @@ Pour ce faire, il faut que tu règles **vx**, c'est-à-dire sa _vélocité horiz
 
 ---
 
-- :paper plane: Prend un nouveau bloc<br/>
+- :paper plane: Prends un nouveau bloc<br/>
 ``||sprites:définir [mySprite] [x] à [0]||`` <br/>
 et connecte-le à **la fin** du containe<br/>
 ``||loops:au démarrage||``.
@@ -153,7 +151,7 @@ Nous allons faire en sorte que la "caméra" suive le sprite pour qu'il soit touj
 
 ---
 
-- :tree:  Pour garder le sprite visible, va dans ``||scene:Scene||`` et prend le bloc <br/>
+- :tree:  Pour garder le sprite visible, va dans ``||scene:Scene||`` et prends le bloc <br/>
 ``||scene:camera suit sprite [mySprite]||`` <br/>
 pour le placer à **la fin** du container<br/>
 ``||loops:au démarrage||``.
