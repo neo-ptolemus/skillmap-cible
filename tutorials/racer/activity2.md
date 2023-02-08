@@ -18,7 +18,7 @@ Tu devrais voir le bloc qui ajoute de la gravité, celui qui permet à ta voitur
 
 ## 3. Saute
 
-Tu devrais remarquer quelques lacs d'acide sur le chemin de ton monster truck. Pour les éviter, on va sauter avec le bouton (A)
+Tu devrais remarquer quelques goufres d'acide sur le chemin de ton monster truck. Pour les éviter, on va sauter avec le bouton (A)
 
 ---
 
