@@ -2,19 +2,19 @@
 
 ## Introduction @showdialog
 
-Dans ce tuoriel, on va customiser ton jeu pour le rendre encore plus spécial.
+Dans ce tutoriel, on va customiser ton jeu pour le rendre encore plus spécial.
 
 ![Animating your truck.](/static/skillmap/racer/racer3.gif "Regarde ce qu'on va faire !")
 
 
 ## 2. Révisions
 
-Jette un coup d'oeil œil au code qui est déà dans ton espace de travail.
+Jette un coup d'oeil au code qui est déà dans ton espace de travail.
 
-Tu deavrais voir les blocs qui agissent sur ton monster truck and ceux qui te permettent de sauter.
+Tu devrais voir les blocs qui agissent sur ton monster truck and ceux qui te permettent de sauter.
 
-Il doit aussi y avoir trois containers **chevauche**:
-- un qui termine le jeu si tu tombe dans un puit d'acide
+Il doit aussi y avoir trois containers **'chevauche'**:
+- un qui termine le jeu si tu tombes dans un puit d'acide
 - un qui termine le jeu si tu touches les pics
 - et un qui termine le jeu quand tu atteins le fond de la cave.
 
@@ -65,7 +65,7 @@ Il est temps de choisir l'animation de ton monster truck.
 
 - :mouse pointer: Une fois que tu as choisi ton animation, la valeur **intervalle (ms)** devrait se compléter automatiquement, mais tu peux la remplacer avec un plus grand nombre si tu veux qu'elle se joue plus lentement.
 
-- :mouse pointer: Fait baculer le bouton **en boucle** sur `<ON>` pour que l'animation se joue en boucle pendant tout le jeu..
+- :mouse pointer: Fais basculer le bouton **en boucle** sur `<ON>` pour que l'animation se joue en boucle pendant tout le jeu..
 
 ```blocks
 tiles.setTilemap(tilemap`level1`)
@@ -128,7 +128,7 @@ Les tuiles pour ce jeu sont disponibles dans **My Tiles**.
 
 ## 9. Encore un peu de Code
 
-Attention, si tu ajoute de nouvelles tuiles à ton jeu (comme les pics au sol par exemple), il faut que tu ajoutes d'autres container<br/>
+Attention, si tu ajoutes de nouvelles tuiles à ton jeu (comme les pics au sol par exemple), il faut que tu ajoutes d'autres container<br/>
 ``||scene:lorsque [sprite] de type [Player] chevauche [ ] à [location]||`` <br/>
 pour les activer !
 
@@ -138,7 +138,7 @@ pour les activer !
 
 Bravo !
 
-Essaie ton jeu en plein écran - saut par-dessus les obstacles et essaie d'arriver à la ligne d'arrivée !
+Essaie ton jeu en plein écran - saute par-dessus les obstacles et essaie d'arriver à la ligne d'arrivée !
 
 Quand tu as fini, clique sur **Terminé** pour terminer le tutoriel. 
 
