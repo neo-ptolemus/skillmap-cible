@@ -56,31 +56,38 @@
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity3.png
 
 
-## Monster Racer
-* name: Monster Racer
+## racer
+* name: Monster racer
+* description: À vos marques, prêts... Partez ! À toi de guider le monster truck jusqu'à la sortie de la grotte en évitant les pics et les marres d'acide !
 
-### racer1
+### racer-activity1
+
 * name: Prêt, Feu, Partez !
 * type: tutorial
 * description: Crée ton monster truck et fait le rouler jusqu'à la fin de la grotte.
-* url: https://github.com/aescoffier-monchapet/tuto-arcade/blob/main/tutorials/racer/activity1
 * tags: facile, sprites, dessin
-* imageUrl: /static/skillmap/racer/racer1.gif
-* next: racer2
+* next: racer-activity2
 
-### racer2
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/racer/activity1
+* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/racer/racer1.gif
+
+### racer-activity2
+
 * name: Dessus-dessous
 * type: tutorial
 * description: Aide ton monster truck à survivre aux gouffres et autres périls de la grotte.
-* url: https://github.com/aescoffier-monchapet/tuto-arcade/blob/main/tutorials/racer/activity2
 * tags: facile, tuiles, evenements
-* imageUrl: /static/skillmap/racer/racer2.gif
-* next: racer3
+* next: racer-activity3
 
-### racer3
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/racer/activity2
+* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/racer/activity2.png
+
+### racer-activity3
+
 * name: Toujours plus loin
-* type: tutorial
 * description: Personnalise ton jeu en ajoutant dans animations et en modifiant la carte du jeu !
-* url: https://github.com/aescoffier-monchapet/tuto-arcade/blob/main/tutorials/racer/activity3
-* tags: facile, ennemis, chevauche, vies
-* imageUrl: /static/skillmap/racer/racer3.gif
+* type: tutorial
+* tags: facile, ennemis, vies, chevauche
+
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/racer/activity3
+* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/racer/activity3.png
