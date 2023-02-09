@@ -32,7 +32,7 @@
 * next: space-activity2
 
 * url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity1
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity1.png
+* imageUrl: /static/skillmap/space/space.gif
 
 ### space-activity2
 
@@ -43,7 +43,7 @@
 * next: space-activity3
 
 * url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity2
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity2.png
+* imageUrl: /static/skillmap/space/projectiles.gif
 
 ### space-activity3
 
@@ -53,41 +53,34 @@
 * tags: facile, ennemies, types
 
 * url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity3
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/space/activity3.png
+* imageUrl: /static/skillmap/space/enemies.gif
 
 
-## racer
-* name: Monster racer
-* description: À vos marques, prêts... Partez ! À toi de guider le monster truck jusqu'à la sortie de la grotte en évitant les pics et les marres d'acide !
+## Monster Racer
+* name: Monster Racer
 
-### racer-activity1
-
+### racer1
 * name: Prêt, Feu, Partez !
 * type: tutorial
 * description: Crée ton monster truck et fait le rouler jusqu'à la fin de la grotte.
-* tags: facile, sprites, dessin
-* next: racer-activity2
-
 * url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/racer/activity1
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/racer/racer1.gif
+* tags: facile, sprites, dessin
+* imageUrl: /static/skillmap/racer/racer1.gif
+* next: racer2
 
-### racer-activity2
-
+### racer2
 * name: Dessus-dessous
 * type: tutorial
 * description: Aide ton monster truck à survivre aux gouffres et autres périls de la grotte.
-* tags: facile, tuiles, evenements
-* next: racer-activity3
-
 * url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/racer/activity2
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/racer/activity2.png
+* tags: facile, tuiles, evenements
+* imageUrl: /static/skillmap/racer/racer2.gif
+* next: racer3
 
-### racer-activity3
-
+### racer3
 * name: Toujours plus loin
-* description: Personnalise ton jeu en ajoutant dans animations et en modifiant la carte du jeu !
 * type: tutorial
-* tags: facile, ennemis, vies, chevauche
-
+* description: Personnalise ton jeu en ajoutant dans animations et en modifiant la carte du jeu !
 * url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/racer/activity3
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/racer/activity3.png
+* tags: facile, ennemis, chevauche, vies
+* imageUrl: /static/skillmap/racer/racer3.gif
