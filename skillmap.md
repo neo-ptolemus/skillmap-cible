@@ -32,7 +32,7 @@
 * next: space-activity2
 
 * url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity1
-* imageUrl: /static/skillmap/space/space.gif
+* imageUrl: /img/space/space.gif
 
 ### space-activity2
 
@@ -43,7 +43,7 @@
 * next: space-activity3
 
 * url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity2
-* imageUrl: /static/skillmap/space/projectiles.gif
+* imageUrl: /img/space/projectiles.gif
 
 ### space-activity3
 
@@ -53,7 +53,7 @@
 * tags: facile, ennemies, types
 
 * url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity3
-* imageUrl: /static/skillmap/space/enemies.gif
+* imageUrl: /img/space/enemies.gif
 
 
 ## Monster Racer
