@@ -54,3 +54,39 @@
 
 * url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity3
 * imageUrl: /static/skillmap/space/enemies.gif
+
+## truck
+* name:  Monster Racer
+* description: Après l'espace, le fin fond d'une grotte ! Sort ton monster truck de la caverne en évitant les pics et les puits d'acide !
+
+### truck-activity1
+
+* name: Prêt, Feu, Partez !
+* type: tutorial
+* description: Crée ton monster truck et fait le rouler jusqu'à la fin de la grotte.
+* tags: facile, sprites, dessin
+* next: space-activity2
+
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity1
+* imageUrl: /static/skillmap/truck/racer1.gif
+
+### truck-activity2
+
+* name: Dessus-dessous
+* type: tutorial
+* description: Aide ton monster truck à survivre aux gouffres et autres périls de la grotte.
+* tags: facile, tuiles, evenements
+* next: space-activity3
+
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity2
+* imageUrl: /static/skillmap/truck/racer2.gif
+
+### truck-activity3
+
+* name: Toujours plus loin
+* description: Personnalise ton jeu en ajoutant dans animations et en modifiant la carte du jeu !
+* type: tutorial
+* tags: facile, ennemis, chevauche, vies
+
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity3
+* imageUrl: /static/skillmap/truck/raxer3.gif
