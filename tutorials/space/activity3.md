@@ -218,7 +218,7 @@ game.onUpdateInterval(1000, function () {
 ## Étape 5
 
 Tu as peut-être envie d'ajouter plein de types d'ennemis différents qui sortent du haut de l'écran.
-On peut faire en sorte qu'ils aient tous le même comportement en utilisant la classe "**Enemy**" [__*class*__](#withClass "une catégorie qu'on donne à un groupe de sprites qui a le même comportement").
+On peut faire en sorte qu'ils aient tous le même comportement en utilisant la [__*classe*__](#withClass "une catégorie qu'on donne à un groupe de sprites qui a le même comportement") "**Enemy**".
 
 ---
 
