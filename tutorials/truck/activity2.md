@@ -23,7 +23,7 @@ Tu devrais remarquer quelques goufres d'acide sur le chemin de ton monster truck
 ---
 
 
-- :game: Dans ``||controller:Controller||``, prend le container <br/>
+- :game: Dans ``||controller:Contrôleur||``, prends le container <br/>
 ``||controller: quand bouton [A] est [appuyé]||`` <br/>
 et place-le dans une zone vide de ton espace de travail.
 
@@ -61,14 +61,14 @@ Maintenant que tu peux sauter par dessus les gouffres, on va les rendre un peu p
 
 ---
 
-- :tree: Dans ``||scene:Scene||``, prend un container <br/>
+- :tree: Dans ``||scene:Scene||``, prends un container <br/>
 ``||scene:quand [sprite] de type [Player] chevauche [ ] à [location]||`` <br/>
 et place-le dans l'espace de travail.
 
 - :paint brush: Clique sur le damier et choisis à la place la tuile d'**acide**.<br/>
 ![Make your truck jump dangerous pits of acid](/static/skillmap/racer/acid.png "Avoid the acid tiles")
 
-- :circle: Dans ``||game:Game||``, prend un bloc <br/>
+- :circle: Dans ``||game:Game||``, prends un bloc <br/>
 ``||game:jeu terminé <PERDU>||`` <br/>
 et ajoute-le à la fin du container..
 
@@ -83,7 +83,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`acid`, function (sprite, loca
 
 ## 6. Les pics
 
-Si tu appuies plusieurs fois de suite sur le bouton (A), tu risques d'atterrir dans les pics. Maintenant, rendon-les dangereux, eux-aussi !
+Si tu appuies plusieurs fois de suite sur le bouton (A), tu risques d'atterrir dans les pics. Maintenant, rendons-les dangereux, eux-aussi !
 
 ---
 
