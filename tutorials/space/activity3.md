@@ -180,8 +180,7 @@ au hasard pour les ennemis en utilisant le bloc
 ``||Math:choisir aléatoire entre [0] et [10]||`` de la catégorie ``||Math:Math||``.
 Connecte-le à la place du **0** dans le bloc  **définir myEnemy x**.
 
-- :pencil alternate: Enfin, modifie l'argument minimum de 
-- ``||Math:choisir aléatoire entre [0] et [10]||`` en **5** et le maximum en 155.
+- :pencil alternate: Enfin, modifie l'argument minimum de ``||Math:choisir aléatoire entre [0] et [10]||`` en **5** et le maximum en 155.
 
 ---
 
