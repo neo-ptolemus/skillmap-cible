@@ -67,7 +67,7 @@
 * tags: facile, sprites, dessin
 * next: truck-activity2
 
-* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/racer/activity1
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/platformer/activity1
 * imageUrl: /static/skillmap/racer/racer1.gif
 
 ### truck-activity2
@@ -78,7 +78,7 @@
 * tags: facile, tuiles, evenements
 * next: truck-activity3
 
-* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/racer/activity2
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/platformer/activity2
 * imageUrl: /static/skillmap/racer/racer2.gif
 
 ### truck-activity3
@@ -88,5 +88,5 @@
 * type: tutorial
 * tags: facile, ennemis, chevauche, vies
 
-* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/racer/activity3
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/platformer/activity3
 * imageUrl: /static/skillmap/racer/racer3.gif
