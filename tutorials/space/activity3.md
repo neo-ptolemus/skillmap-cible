@@ -81,7 +81,7 @@ On va ajouter un peu de code pour faire apparaître des ennemis toutes les quelq
 
 ---
  
-- :puzzle piece: Ajoute un container ``||game:on game update every [500] ms||`` dans l'espace de travail
+- :puzzle piece: Ajoute un container ``||game: quand mise à jour du jeu chaque [500] ms||`` dans l'espace de travail
 - :pencil alternate: Change le dernier argument à **1000** [__*ms*__](#millis "millisecondes... soit 1/1000 de seconde") 
 (ou choisis **1 seconde** dans le menu déroulant)  
 
