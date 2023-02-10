@@ -65,9 +65,9 @@
 * type: tutorial
 * description: Crée ton monster truck et fait le rouler jusqu'à la fin de la grotte.
 * tags: facile, sprites, dessin
-* next: space-activity2
+* next: truck-activity2
 
-* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/truck/activity1
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity1
 * imageUrl: /static/skillmap/truck/racer1.gif
 
 ### truck-activity2
@@ -76,9 +76,9 @@
 * type: tutorial
 * description: Aide ton monster truck à survivre aux gouffres et autres périls de la grotte.
 * tags: facile, tuiles, evenements
-* next: space-activity3
+* next: truck-activity3
 
-* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/truck/activity2
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity2
 * imageUrl: /static/skillmap/truck/racer2.gif
 
 ### truck-activity3
@@ -88,5 +88,5 @@
 * type: tutorial
 * tags: facile, ennemis, chevauche, vies
 
-* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/truck/activity3
+* url: https://github.com/aescoffier-monchapet/tuto-arcade/tutorials/space/activity3
 * imageUrl: /static/skillmap/truck/racer3.gif
