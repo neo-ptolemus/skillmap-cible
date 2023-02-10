@@ -126,7 +126,7 @@ Les tuiles pour ce jeu sont disponibles dans **My Tiles**.
 ![Change tiles](/static/skillmap/racer/racer-custom.gif "Utilise la galerie de tuiles pour sélectionner les tuiles à ajouter à la carte du niveau.")
 
 
-## 9. Encore un peu de Code
+## 9. Encore un peu de code
 
 Attention, si tu ajoutes de nouvelles tuiles à ton jeu (comme les pics au sol par exemple), il faut que tu ajoutes d'autres container<br/>
 ``||scene:lorsque [sprite] de type [Player] chevauche [ ] à [location]||`` <br/>
