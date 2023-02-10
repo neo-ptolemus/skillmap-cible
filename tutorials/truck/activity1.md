@@ -15,8 +15,9 @@ Dans ce tutoriel, tu vas ajouter un monster truck à ton jeu et le faire rouler 
 
 - :binoculars: On a déjà préparé les blocs pour la **tilemap** et l' **image de fond** pour que tout soit prêt pour commencer.
 
-~hint ❓ C'est quoi une tilemap ?
+** ❓ C'est quoi une tilemap ?**
 Une tilemap (= carte de tuiles), c'est la carte du jeu qui est créée en assemblant des tuiles (en forme de blocs) les uns à côté des autres. Un peu comme dans Minecraft, mais en 2D !
+
 
 _💡 Ces deux blocs ont été ajoutés au container ``||loops: au démarrage||`` pour qu'ils se chargent dès le lancement du jeu._
 
@@ -31,7 +32,7 @@ Ouvre le simulateur pour regarder la scène qu'on a préparée.
 
 ---
 
-Pour mieux voir, tu peux cliquer sur le bouton carré à **droite du simulateur** en bas à droite.  
+Pour mieux voir, tu peux cliquer sur le bouton carré avec des angles à **droite du simulateur** en bas à droite.  
 
 Tu devrais voir l'arrière-plan avec les arbres flippants et les tuiles de la grotte par dessus.
 
@@ -39,7 +40,7 @@ Tu devrais voir l'arrière-plan avec les arbres flippants et les tuiles de la gr
 
 ## 4. Ajoute le camion
 
-Il est temps de préparer ton monster truck. Pour cela, on va avoir besoin de créer un sprite[__*sprite*__](#sprote "une image en 2D qui bouge sur l'écran").
+Il est temps de préparer ton monster truck. Pour cela, on va avoir besoin de créer un [__*sprite*__](#sprote "une image en 2D qui bouge sur l'écran").
 
 ---
 
@@ -110,7 +111,7 @@ Normalement, le camion tombe au sol au début du jeu.
 
 Dans ce jeu, il faut que ta voiture se mette à rouler dès le début.  
   
-Pour ce faire, il faut que tu règles **vx**, c'est-à-dire sa _vélocité horizontale_ (= sa vitesse sur l'axe horizontal).
+Pour faire ça, il faut que tu règles **vx**, c'est-à-dire sa _vélocité horizontale_ (= sa vitesse sur l'axe horizontal).
 
 ![Set the speed](/static/skillmap/racer/velocity.gif "Choisis vx(vélocité selon x)")
 
@@ -118,7 +119,7 @@ Pour ce faire, il faut que tu règles **vx**, c'est-à-dire sa _vélocité horiz
 
 - :paper plane: Prends un nouveau bloc<br/>
 ``||sprites:définir [mySprite] [x] à [0]||`` <br/>
-et connecte-le à **la fin** du containe<br/>
+et connecte-le à **la fin** du container<br/>
 ``||loops:au démarrage||``.
 
 - :mouse pointer: Clique sur le menu déroulant pour changer ``||sprites:x||`` en ``||sprites:vx (vélocité en x)||``.
