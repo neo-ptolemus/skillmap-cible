@@ -290,7 +290,7 @@ Quand l'ennemi rentre en collision avec le vaisseau, on veut qu'il nous enlève 
 
 ---
 
-- :puzzle piece: Prends le bloc ``||info:change life by [-1]||`` de la catégorie``||info:Info||`` et connecte le dans le container **quand player chevauche enemy**
+- :puzzle piece: Prends le bloc ``||info: modifier la vie de [-1]||`` de la catégorie``||info:Info||`` et connecte le dans le container **quand player chevauche enemy**
 Il fera que notre vie descend de 1 point quand un ennemi touche le joueur.
 
 - :puzzle piece: Prends le bloc ``||sprites:détruire [mySprite] ⊕||`` et connecte-le juste en dessous du bloc précédent.
