@@ -18,75 +18,39 @@
 * imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/interface/activity1.png
   
 
-## space
+## cible
 * name: Crée un vaisseau spatial
 * description: Partons explorer les profondeurs de l'espace ! Nous allons créer un vaisseau pour voyager dans l'espace, ajouter quelques ennemis, et peupler l'univers avec des planètes.
 * completionUrl: https://microsoft.github.io/pxt-skillmap-sample/certificates/design-a-space-explorer.pdf
 
-### space-activity1
+### cible-activity1
 
 * name: Création du vaisseau
 * type: tutorial
 * description: Dessine et code un vaisseau spatial !
 * tags: facile
-* next: space-activity2
+* next: cible-activity2
 
-* url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/space/activity1
+* url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/cible/activity1
 * imageUrl: /static/skillmap/space/space1.gif
 
-### space-activity2
+### cible-activity2
 
 * name: Projectiles
 * type: tutorial
 * description: Personnalise ton vaisseau avec des projectiles et des effets.
 * tags: facile, projectiles, types
-* next: space-activity3
+* next: cible-activity3
 
-* url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/space/activity2
+* url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/cible/activity2
 * imageUrl: /static/skillmap/space/projectiles.gif
 
-### space-activity3
+### cible-activity3
 
 * name: Ennemies
 * description: Attention aux dangers de l'espace ! Ajoute des ennemis et une barre de vie à ton jeu.
 * type: tutorial
 * tags: facile, ennemies, types
 
-* url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/space/activity3
+* url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/cible/activity3
 * imageUrl: /static/skillmap/space/enemies.gif
-
-## truck
-* name:  Monster Racer
-* description: Après l'espace, le fin fond d'une grotte ! Sort ton monster truck de la caverne en évitant les pics et les puits d'acide !
-
-### truck-activity1
-
-* name: Prêt, Feu, Partez !
-* type: tutorial
-* description: Crée ton monster truck et fait le rouler jusqu'à la fin de la grotte.
-* tags: facile, sprites, dessin
-* next: truck-activity2
-
-* url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/platformer/activity1
-* imageUrl: /static/skillmap/racer/racer1.gif
-
-### truck-activity2
-
-* name: Dessus-dessous
-* type: tutorial
-* description: Aide ton monster truck à survivre aux gouffres et autres périls de la grotte.
-* tags: facile, tuiles, evenements
-* next: truck-activity3
-
-* url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/platformer/activity2
-* imageUrl: /static/skillmap/racer/racer2.gif
-
-### truck-activity3
-
-* name: Toujours plus loin
-* description: Personnalise ton jeu en ajoutant dans animations et en modifiant la carte du jeu !
-* type: tutorial
-* tags: facile, ennemis, chevauche, vies
-
-* url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/platformer/activity3
-* imageUrl: /static/skillmap/racer/racer3.gif
