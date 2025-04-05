@@ -7,19 +7,241 @@ On y presque ! Il est temps d'ajouter une fin au jeu et de le rendre un peu plus
 ![Apercu](/apercu4.gif "Regarde ce qu'on va faire !")
 
 
-## 1. Ajouter un compte à rebours (1/3)
+## 1. Ajouter un compte à rebours (1/2)
 
-Il est super ce jeu... mais il ne se termine jamais ? 💭
+Il est super ce jeu... mais il ne se termine jamais ? 💭  
+⏱️ Ajoutons un compte à rebours !  
+
+Pour ça, on va utiliser la library ``||Carnival: Carnival||``. Attention, elle est en anglais !  
+
+- :mouse pointer: Trouve le bloc pour **ajouter et paramétrer un compte à rebours**. En anglais, c'est *"countdown"* 
+
+--- 
+
+❓ A ton avis, où est-ce qu'on doit ajouter ce nouveau bloc ? 🤔
+
+
+```blocks 
+let mySprite: Sprite = null
+let Cible: Sprite = null
+scene.setBackgroundImage(sprites.builtin.aquaticBackground)
+Cible = sprites.create(img`
+    .................1111111111111.................
+    ..............1111111111111111111..............
+    ............11111111111111111111111............
+    ..........111111111111111111111111111..........
+    .........11111111fffffffffffff11111111.........
+    ........1111111fffffffffffffffff1111111........
+    .......111111fffffffffffffffffffff111111.......
+    ......11111fffffffffffffffffffffffff11111......
+    .....11111fffffffffffffffffffffffffff11111.....
+    ....11111fffffffff99999999999fffffffff11111....
+    ...11111ffffffff999999999999999ffffffff11111...
+    ...1111fffffff9999999999999999999fffffff1111...
+    ..11111ffffff999999999999999999999ffffff11111..
+    ..1111ffffff99999999999999999999999ffffff1111..
+    .11111fffff9999999222222222999999999fffff11111.
+    .1111ffffff9999922222222222229999999ffffff1111.
+    .1111fffff999992222222222222229999999fffff1111.
+    1111ffffff999922222222222222222999999ffffff1111
+    1111fffff99999222222222222222229999999fffff1111
+    1111fffff99992222225555555222222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222225555555222222999999fffff1111
+    1111fffff99999222222222222222229999999fffff1111
+    1111ffffff999922222222222222222999999ffffff1111
+    .1111fffff999992222222222222229999999fffff1111.
+    .1111ffffff9999922222222222229999999ffffff1111.
+    .11111fffff9999999222222222999999999fffff11111.
+    ..1111ffffff99999999999999999999999ffffff1111..
+    ..11111ffffff999999999999999999999ffffff11111..
+    ...1111fffffff9999999999999999999fffffff1111...
+    ...11111ffffffff999999999999999ffffffff11111...
+    ....11111fffffffff99999999999fffffffff11111....
+    .....11111fffffffffffffffffffffffffff11111.....
+    ......11111fffffffffffffffffffffffff11111......
+    .......111111fffffffffffffffffffff111111.......
+    ........1111111fffffffffffffffff1111111........
+    .........11111111fffffffffffff11111111.........
+    ..........111111111111111111111111111..........
+    ............11111111111111111111111............
+    ..............1111111111111111111..............
+    .................1111111111111.................
+    `, SpriteKind.Enemy)
+mySprite = sprites.create(img`
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
+    1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
+    . . . . . . . d d . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . d d . . . . . . . 
+    `, SpriteKind.Player)
+mySprite.setStayInScreen(true)
+controller.moveSprite(mySprite, 120, 120)
+Cible.setPosition(80, 35)
+Cible.vx = 35
+Cible.setBounceOnWall(true)
+//@highlight
+carnival.startCountdownGame(15, carnival.WinTypes.Win)
+```
+
+## 2. Ajouter un compte à rebours (2/2)
+
+✨ Super ! Maintenant, on va le paramétrer.   
+
+👉 Le trou rond **(15)** permet d'indiquer le nombre de secondes du décompte.  
+👉 Le menu déroulement **[win game ▾]** permet de choisir ce qui est affiché à la fin.  
+👉 Et si tu appuies sur le **⊕**, un menu **[éclabousser ▾]** apparaît pour choisir un effet !  
+
+- :mouse pointer: Paramètre le compte à rebours pour qu'il dure **15 secondes** et affiche le **meilleur score**
+- :paper plane: Ensuite, choisis l'**effet de fin** que tu préfère !
 
 ---
 
-````blocks 
-carnival.showTimer(true)
-carnival.startCountdownGame(15, carnival.WinTypes.Score, effects.splatter)
-carnival.startTimer()
+🕹️ Essaie ton jeu pour tester l'effet ! 
 
+
+```blocks 
+let mySprite: Sprite = null
+let Cible: Sprite = null
+scene.setBackgroundImage(sprites.builtin.aquaticBackground)
+Cible = sprites.create(img`
+    .................1111111111111.................
+    ..............1111111111111111111..............
+    ............11111111111111111111111............
+    ..........111111111111111111111111111..........
+    .........11111111fffffffffffff11111111.........
+    ........1111111fffffffffffffffff1111111........
+    .......111111fffffffffffffffffffff111111.......
+    ......11111fffffffffffffffffffffffff11111......
+    .....11111fffffffffffffffffffffffffff11111.....
+    ....11111fffffffff99999999999fffffffff11111....
+    ...11111ffffffff999999999999999ffffffff11111...
+    ...1111fffffff9999999999999999999fffffff1111...
+    ..11111ffffff999999999999999999999ffffff11111..
+    ..1111ffffff99999999999999999999999ffffff1111..
+    .11111fffff9999999222222222999999999fffff11111.
+    .1111ffffff9999922222222222229999999ffffff1111.
+    .1111fffff999992222222222222229999999fffff1111.
+    1111ffffff999922222222222222222999999ffffff1111
+    1111fffff99999222222222222222229999999fffff1111
+    1111fffff99992222225555555222222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222255555555522222999999fffff1111
+    1111fffff99992222225555555222222999999fffff1111
+    1111fffff99999222222222222222229999999fffff1111
+    1111ffffff999922222222222222222999999ffffff1111
+    .1111fffff999992222222222222229999999fffff1111.
+    .1111ffffff9999922222222222229999999ffffff1111.
+    .11111fffff9999999222222222999999999fffff11111.
+    ..1111ffffff99999999999999999999999ffffff1111..
+    ..11111ffffff999999999999999999999ffffff11111..
+    ...1111fffffff9999999999999999999fffffff1111...
+    ...11111ffffffff999999999999999ffffffff11111...
+    ....11111fffffffff99999999999fffffffff11111....
+    .....11111fffffffffffffffffffffffffff11111.....
+    ......11111fffffffffffffffffffffffff11111......
+    .......111111fffffffffffffffffffff111111.......
+    ........1111111fffffffffffffffff1111111........
+    .........11111111fffffffffffff11111111.........
+    ..........111111111111111111111111111..........
+    ............11111111111111111111111............
+    ..............1111111111111111111..............
+    .................1111111111111.................
+    `, SpriteKind.Enemy)
+mySprite = sprites.create(img`
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
+    1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
+    . . . . . . . d d . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . d d . . . . . . . 
+    `, SpriteKind.Player)
+mySprite.setStayInScreen(true)
+controller.moveSprite(mySprite, 120, 120)
+Cible.setPosition(80, 35)
+Cible.vx = 35
+Cible.setBounceOnWall(true)
+carnival.startCountdownGame(15, carnival.WinTypes.Score, effects.splatter)
 ```
 
+## 3. Un peu de difficulté ! 
+
+🎉 Le jeu fonctionne !
+❗Seulement... c'est trop facile de gagner, il suffit de suivre la cible !
+
+---
+
+💭 On pourrait faire en sorte que la cible change aléatoirement de direction !
+
+- :mouse pointer: Transforme les **instructions suivantes** en code.
+
+*"Après une durée aléatoire, la cible change vers une direction (vx et vy) aléatoire"*  
+❓Besoin d'aide ? Regarde l'indice dans **l'ampoule** 💡
+
+```
+REPETER TOUJOURS :
+    Pause de durée aléatoire
+    Changer les vitesses vx et vy de Cible à des valeurs aléatoires
+```
+
+## 4. Un peu de difficulté - Solution
+
+🤔 Tu as réussi ? Si tu n'es pas sûr·e de ton code, tu peux regarder une **solution** dans **l'ampoule** 💡 
+
+---
+  
+👉 On a choisi que la **pause** dure entre 100ms et 5000ms (5s).   
+👉 Comme **vx** et **vy** sont forcément comprises entre -100 et 100, les blocs ``||Math: choisir aléatoirement entre (0) et (10)||`` prennent ces valeurs comme bornes.  
+
+```blocks
+let Cible: Sprite = null
+
+forever(function () {
+    pause(randint(100, 5000))
+    Cible.setVelocity(randint(-100, 100), randint(-100, 100))
+})
+```
+
+## Conclusion 
+
+🎊 **Bravo !** 🎊
+
+Tu as fini ce tutoriel !   
+Tu as réalisé un jeu de tir sur cible en utilisant la **formule de la distance euclidienne** pour calculer un score en fonction de la zone de couleur touchée. 🎯
+
+Appuie sur ``||Terminé||`` pour finir le tutoriel et continuer de modifier ton jeu librement !
 
 ```template
 controller.A.onEvent(ControllerButtonEvent.Released, function () {

@@ -20,11 +20,11 @@
 
 🎯 En plus de ça, chaque couleur de la cible a un nombre de points différents : 
 
-⚪ **50 pts**
-⚫ **250 pts**
-🔵 **500 pts**
-🔴 **750 pts**
-🟡 **1000 pts**
+⚪ **50 pts**  
+⚫ **250 pts**  
+🔵 **500 pts**  
+🔴 **750 pts**  
+🟡 **1000 pts**  
 
 Et en dehors de la cible ? *0pts...*
 
@@ -354,7 +354,6 @@ Cible = sprites.create(img`
     .................1111111111111.................
     `, SpriteKind.Enemy)
     Cible.setPosition(80, 35)
-    //@highlight
     Cible.vx = 35
 ```
 
