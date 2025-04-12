@@ -4,7 +4,7 @@
 
 Maintenant que ton viseur bouge, on va faire ajouter la cible sur laquelle tirer !
 
-![apercu2](/static/skillmap/cible/cible_2.gif "Regarde ce qu'on va faire !")
+![apercu2](https://github.com/neo-ptolemus/skillmap-cible/img/cible/cible_2.gif "Regarde ce qu'on va faire !")
 
 ## 1. Rafraîchis-toi la mémoire
 

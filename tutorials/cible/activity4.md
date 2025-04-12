@@ -4,7 +4,7 @@
 
 On y presque ! Il est temps d'ajouter une fin au jeu et de le rendre un peu plus difficile. 🎯
 
-![Apercu](/static/skillmap/cible/cible_4.gif "Regarde ce qu'on va faire !")
+![Apercu4](https://github.com/neo-ptolemus/skillmap-cible/img/cible/cible_4.gif "Regarde ce qu'on va faire !")
 
 
 ## 1. Ajouter un compte à rebours (1/2)
