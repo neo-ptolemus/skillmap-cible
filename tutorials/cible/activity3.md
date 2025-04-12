@@ -138,12 +138,11 @@ Maintenant, on doit calculer le score en fonction de la distance au centre de la
   
 Pas de panique ! On a déjà calculé les distances pour toi :   
 
-⚪ **50 pts** - distance ≤ 4  
-⚫ **250 pts** - 4 < distance ≤ 9.5  
+⚪ **50 pts** - 20 < distance ≤ 22.5  
+⚫ **250 pts** - 14 < distance ≤ 20  
 🔵 **500 pts** - 9.5 < distance ≤ 14  
-🔴 **750 pts** - 14 < distance ≤ 20  
-🟡 **1000 pts** - 20 < distance ≤ 22.5  
-
+🔴 **750 pts** - 4 < distance ≤ 9.5  
+🟡 **1000 pts** - distance ≤ 4   
 ---
 
 Dans la fonction `||functions: function [calculDistance] ||`, on va donc tester la valeur de distance dans un grand ``||logic: si < > alors||``. 
@@ -158,11 +157,11 @@ Pour modifier le **score**, on va utiliser le bloc `||info:modifier le score de 
 
 --- 
 
-⚪ **50 pts** - distance ≤ 4   
-⚫ **250 pts** - 4 < distance ≤ 9.5   
-🔵 **500 pts** - 9.5 < distance ≤ 14   
-🔴 **750 pts** - 14 < distance ≤ 20   
-🟡 **1000 pts** - 20 < distance ≤ 22.5   
+⚪ **50 pts** - 20 < distance ≤ 22.5  
+⚫ **250 pts** - 14 < distance ≤ 20  
+🔵 **500 pts** - 9.5 < distance ≤ 14  
+🔴 **750 pts** - 4 < distance ≤ 9.5  
+🟡 **1000 pts** - distance ≤ 4   
 
 ## 9. Calculer le score (3/3)
 
