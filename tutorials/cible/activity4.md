@@ -198,7 +198,7 @@ carnival.startCountdownGame(15, carnival.WinTypes.Score, effects.splatter)
 
 ## 3. Un peu de difficulté ! 
 
-🎉 Le jeu fonctionne !
+🎉 Le jeu fonctionne !   
 ❗Seulement... c'est trop facile de gagner, il suffit de suivre la cible !
 
 ---

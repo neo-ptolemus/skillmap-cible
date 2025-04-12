@@ -13,7 +13,7 @@ Maintenant que ton viseur bouge, on va faire ajouter la cible sur laquelle tirer
 🕹️ Tu devrais voir le code qui ajoute et fait bouger ton viseur, et les blocs qui permettent de le faire changer de couleur en appuyant sur **(A)** !
 
 
-## 2. Ajouter la cible
+## 2.1 Ajouter la cible
 
 - :mouse pointer: Maintenant, dans le container ``||loops:Au démarrage||`` , ajoute le code pour ajouter un sprite de type **Enemy**.
 - :image: Ajoute lui l'image de la 🎯 cible qui est dans la galerie.
@@ -97,6 +97,15 @@ Cible = sprites.create(img`
     Cible.setPosition(80, 35)
 ```
 
+## 2.2 Ajouter la cible
+
+🤔 Est-ce que le viseur passe sous la cible chez toi aussi ? 
+
+---
+- :mouse pointer: Corrige l'ordre des blocs pour que **le viseur soit au dessus de la cible** 🎯
+
+
+
 ## 3. Faire bouger la cible (1/2)
 
 **Maintenant, il faut la faire bouger !**
@@ -114,26 +123,6 @@ _❓ Quand tu lances le jeu, ta cible bouge bien vers la droite ?_
 
 ```blocks
 scene.setBackgroundImage(sprites.builtin.aquaticBackground)
-let mySprite = sprites.create(img`
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
-    1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
-    . . . . . . . d d . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . d d . . . . . . . 
-    `, SpriteKind.Player)
-mySprite.setStayInScreen(true)
-controller.moveSprite(mySprite, 120, 120)
 let Cible: Sprite = null
 Cible = sprites.create(img`
     .................1111111111111.................
@@ -187,6 +176,26 @@ Cible = sprites.create(img`
     Cible.setPosition(80, 35)
     //@highlight
     Cible.vx = 35
+    let mySprite = sprites.create(img`
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
+    1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
+    . . . . . . . d d . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . 1 1 . . . . . . . 
+    . . . . . . . d d . . . . . . . 
+    `, SpriteKind.Player)
+    mySprite.setStayInScreen(true)
+    controller.moveSprite(mySprite, 120, 120)
 ```
 
 
@@ -205,29 +214,9 @@ _💡 On pourrait faire en sorte que la cible rebondisse sur les bords pour touj
 
 
 ```blocks
-scene.setBackgroundImage(sprites.builtin.aquaticBackground)
-let mySprite = sprites.create(img`
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
-    1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
-    . . . . . . . d d . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . 1 1 . . . . . . . 
-    . . . . . . . d d . . . . . . . 
-    `, SpriteKind.Player)
-mySprite.setStayInScreen(true)
-controller.moveSprite(mySprite, 120, 120)
-let Cible: Sprite = null
-Cible = sprites.create(img`
+    scene.setBackgroundImage(sprites.builtin.aquaticBackground)
+    let Cible: Sprite = null
+    Cible = sprites.create(img`
     .................1111111111111.................
     ..............1111111111111111111..............
     ............11111111111111111111111............
@@ -278,6 +267,26 @@ Cible = sprites.create(img`
     `, SpriteKind.Enemy)
     Cible.setPosition(80, 35)
     Cible.vx = 35
+    let mySprite = sprites.create(img`
+        . . . . . . . 1 1 . . . . . . . 
+        . . . . . . . 1 1 . . . . . . . 
+        . . . . . . . 1 1 . . . . . . . 
+        . . . . . . . 1 1 . . . . . . . 
+        . . . . . . . 1 1 . . . . . . . 
+        . . . . . . . 1 1 . . . . . . . 
+        . . . . . . . 1 1 . . . . . . . 
+        1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
+        1 1 1 1 1 1 d . . d 1 1 1 1 1 d 
+        . . . . . . . d d . . . . . . . 
+        . . . . . . . 1 1 . . . . . . . 
+        . . . . . . . 1 1 . . . . . . . 
+        . . . . . . . 1 1 . . . . . . . 
+        . . . . . . . 1 1 . . . . . . . 
+        . . . . . . . 1 1 . . . . . . . 
+        . . . . . . . d d . . . . . . . 
+        `, SpriteKind.Player)
+    mySprite.setStayInScreen(true)
+    controller.moveSprite(mySprite, 120, 120)
     //@highlight
     Cible.setBounceOnWall(true)
 ```

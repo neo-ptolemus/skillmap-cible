@@ -47,6 +47,8 @@ _❓Est-ce que tu te rappelles de la formule du calcul de la distance ?_
 
 - :mouse pointer: Créer une variable **distance** et place le bloc qui permet de **définir sa valeur** dans le container `||functions: function [calculDistance] ||`
 
+❗ **Attention**, la catégorie `||functions: Fonctions ||`, se trouve dans **Avancé**.
+
 ```blocks 
 function calculDistance () {
     distance = 0
@@ -172,7 +174,6 @@ Tu veux vérifier ton code ? 👀
 ```blocks 
 function calculDistance () {
     distance = Math.sqrt((mySprite.x - Cible.x) ** 2 + (mySprite.y - Cible.y) ** 2)
-    console.logValue("x", 0)
     if (distance < 4) {
         info.changeScoreBy(1000)
     } else {
@@ -401,7 +402,6 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 function calculDistance () {
     distance = Math.sqrt((mySprite.x - Cible.x) ** 2 + (mySprite.y - Cible.y) ** 2)
-    console.logValue("x", 0)
     if (distance < 4) {
         info.changeScoreBy(1000)
     } else {

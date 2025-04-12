@@ -208,6 +208,26 @@ let mySprite = sprites.create(img`
     . . . . . . . 1 1 . . . . . . . 
     . . . . . . . d d . . . . . . . 
     `, SpriteKind.Player)
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    mySprite.setImage(img`
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        2 2 2 2 2 2 2 . . 2 2 2 2 2 2 2 
+        2 2 2 2 2 2 2 . . 2 2 2 2 2 2 2 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        . . . . . . . 2 2 . . . . . . . 
+        `)
+})
 controller.A.onEvent(ControllerButtonEvent.Released, function () {
     mySprite.setImage(img`
         . . . . . . . 1 1 . . . . . . . 
