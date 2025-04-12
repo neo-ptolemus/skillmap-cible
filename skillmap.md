@@ -15,54 +15,53 @@
 * tags: facile
 
 * url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/interface/activity1 
-* imageUrl: https://raw.githubusercontent.com/microsoft/pxt-skillmap-sample/main/img/interface/activity1.png
+* imageUrl: /static/skillmap/cible/cover_tutogen.gif
   
 
 ## cible
-* name: Crée un vaisseau spatial
-* description: Partons explorer les profondeurs de l'espace ! Nous allons créer un vaisseau pour voyager dans l'espace, ajouter quelques ennemis, et peupler l'univers avec des planètes.
-* completionUrl: https://microsoft.github.io/pxt-skillmap-sample/certificates/design-a-space-explorer.pdf
+* name: Crée un jeu de tir !
+* description: Nous allons créer une cible mouvante et un viseur pour réviser la distance euclidienne !
 
 ### cible-activity1
 
-* name: Création du vaisseau
+* name: Création du viseur
 * type: tutorial
-* description: Dessine et code un vaisseau spatial !
-* tags: facile
+* description: Dessine un fond et programme le viseur !
+* tags: facile, viseur
 * next: cible-activity2
 
 * url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/cible/activity1
-* imageUrl: /static/skillmap/space/space1.gif
+* imageUrl: /static/skillmap/cible/cible_1.gif
 
 ### cible-activity2
 
-* name: Projectiles
+* name: Ajouter une cible
 * type: tutorial
-* description: Personnalise ton vaisseau avec des projectiles et des effets.
-* tags: facile, projectiles, types
+* description: Ajoutons une cible sur laquelle tirer !
+* tags: facile, cible
 * next: cible-activity3
 
 * url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/cible/activity2
-* imageUrl: /static/skillmap/space/projectiles.gif
+* imageUrl: /static/skillmap/cible/cible_2.gif
 
 
 ### cible-activity3
 
-* name: Projectiles
+* name: Calculer le score
 * type: tutorial
-* description: Personnalise ton vaisseau avec des projectiles et des effets.
-* tags: facile, projectiles, types
+* description: Il est de temps de calculer la distance au centre de la cible !
+* tags: projectiles, fonction, score
 * next: cible-activity4
 
 * url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/cible/activity3
-* imageUrl: /static/skillmap/space/projectiles.gif
+* imageUrl: /static/skillmap/cible/cible_3.gif
 
 ### cible-activity4
 
-* name: Ennemies
-* description: Attention aux dangers de l'espace ! Ajoute des ennemis et une barre de vie à ton jeu.
+* name: Les finitions
+* description: Le jeu est un peu facile, non ? Ajoutons les derniers détails !
 * type: tutorial
-* tags: facile, ennemies, types
+* tags: facile, cible, viseur
 
 * url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/cible/activity4
-* imageUrl: /static/skillmap/space/enemies.gif
+* imageUrl: /static/skillmap/cible/cible_4.gif

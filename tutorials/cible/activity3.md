@@ -5,7 +5,7 @@
 
 Ça avance bien ! Il est temps d'ajouter le code pour pouvoir tirer sur la cible. 🎯
 
-![Apercu](/apercu3.gif "Regarde ce qu'on va faire !")
+![Apercu](/static/skillmap/cible/cible_3.gif "Regarde ce qu'on va faire !")
 
 
 ## 1. Le principe
@@ -38,7 +38,7 @@ Et en dehors de la cible ? *0pts...*
 
 _❓Est-ce que tu te rappelles de la formule du calcul de la distance ?_
 
-![formule](/static/skillmap/racer/racer1.gif "La formule de la distance")
+![formule](/static/skillmap/cible/formule.png "La formule de la distance")
 
 ---
 
@@ -58,7 +58,7 @@ function calculDistance () {
 
 _🤔 Maintenant, de quoi on a besoin ?_
 
-![formule](/static/skillmap/racer/racer1.gif "La formule de la distance")
+![formule](/static/skillmap/cible/formule.png "La formule de la distance")
 
 ---
 
@@ -81,9 +81,9 @@ Les coordonnées des sprites de la cible et du viseur !
 💡_**Indice 1 :** Chaque sprite aura deux blocs : un bloc pour son **x** et un bloc pour son **y**, donc 4 en tout !_  
 💡_**Indice 2 :** Tu ne pourras pas les ajouter tout de suite dans le code, ils vont dans des **trous ronds**_
 
-```
-[ Ajouter une image des blocs ]
-```
+
+![blocs](/static/skillmap/cible/block_x_y.png "La formule de la distance")
+
 
 ## 5. Construire la formule 
 

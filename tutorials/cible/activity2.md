@@ -4,7 +4,7 @@
 
 Maintenant que ton viseur bouge, on va faire ajouter la cible sur laquelle tirer !
 
-![apercu2](/static/skillmap/racer/racer2.gif "Regarde ce qu'on va faire !")
+![apercu2](/static/skillmap/cible/cible_2.gif "Regarde ce qu'on va faire !")
 
 ## 1. Rafraîchis-toi la mémoire
 
@@ -16,7 +16,7 @@ Maintenant que ton viseur bouge, on va faire ajouter la cible sur laquelle tirer
 ## 2. Ajouter la cible
 
 - :mouse pointer: Maintenant, dans le container ``||loops:Au démarrage||`` , ajoute le code pour ajouter un sprite de type **Enemy**.
-- :image: Ajoute lui l'image de la 🎯 cible qui est dans la gallerie.
+- :image: Ajoute lui l'image de la 🎯 cible qui est dans la galerie.
 - :pencil: Renomme le sprite **Cible**.
 - :paper plane: Initialise sa **position** à **x=80** et **y=35**.
 
