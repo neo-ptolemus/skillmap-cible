@@ -15,7 +15,7 @@
 * tags: facile
 
 * url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/interface/activity1 
-* imageUrl: static/cible/cover_tutogen.gif
+* imageUrl: https://raw.githubusercontent.com/neo-ptolemus/skillmap-cible/master/img/cible/cover_tutogen.gif
   
 
 ## cible
@@ -31,7 +31,7 @@
 * next: cible-activity2
 
 * url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/cible/activity1
-* imageUrl:  static/cible/cible_1.gif
+* imageUrl: https://i.postimg.cc/yNSKrYdM/cible-1.gif
 
 ### cible-activity2
 
@@ -42,7 +42,7 @@
 * next: cible-activity3
 
 * url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/cible/activity2
-* imageUrl: static/cible/cible_2.gif
+* imageUrl: https://raw.githubusercontent.com/neo-ptolemus/skillmap-cible/master/img/cible/cible_2.gif
 
 
 ### cible-activity3
@@ -54,7 +54,7 @@
 * next: cible-activity4
 
 * url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/cible/activity3
-* imageUrl: static/cible/cible_3.gif
+* imageUrl: https://raw.githubusercontent.com/neo-ptolemus/skillmap-cible/master/img/cible/cible_3.gif
 
 ### cible-activity4
 
@@ -64,4 +64,4 @@
 * tags: facile, cible, viseur
 
 * url: https://github.com/neo-ptolemus/skillmap-cible/tutorials/cible/activity4
-* imageUrl: static/cible/cible_4.gif
+* imageUrl: https://raw.githubusercontent.com/neo-ptolemus/skillmap-cible/master/img/cible/cible_4.gif
