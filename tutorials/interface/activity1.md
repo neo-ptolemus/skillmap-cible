@@ -32,7 +32,7 @@ game.onUpdateInterval(5000, function () {
 
 ## Introduction @unplugged
 
-![Psyched Monkey](/static/skillmap/interface/monkey.png "Psyched Monkey is Ready!" )
+![Psyched Monkey](/static/interface/monkey.png "Psyched Monkey is Ready!" )
 
 **Prêt·e à coder tes propres jeux ?**
 
@@ -106,7 +106,7 @@ connectés, dupliqués, et supprimés.
 
 Continue pour en apprendre plus sur les blocs.
 
-![Block Animation](/static/skillmap/interface/use_blocks.gif "Ajout d'un bloc, connexion et suppression." )
+![Block Animation](/static/interface/use_blocks.gif "Ajout d'un bloc, connexion et suppression." )
 
 
 
