@@ -34,6 +34,8 @@ Et en dehors de la cible ? *0pts...*
 
 - :mouse pointer: Crée une nouvelle **fonction** qui s'appelle **calculDistance** !
 
+❗ **Attention**, la catégorie `||functions: Fonctions ||`, se trouve dans **Avancé**.
+
 ## 3. Calculer la distance 
 
 _❓Est-ce que tu te rappelles de la formule du calcul de la distance ?_
@@ -46,8 +48,6 @@ _❓Est-ce que tu te rappelles de la formule du calcul de la distance ?_
 ✨ Tout d'abord, il nous faut une **variable distance**, qui contiendra... la valeur de la distance, qu'on va calculer.
 
 - :mouse pointer: Créer une variable **distance** et place le bloc qui permet de **définir sa valeur** dans le container `||functions: function [calculDistance] ||`
-
-❗ **Attention**, la catégorie `||functions: Fonctions ||`, se trouve dans **Avancé**.
 
 ```blocks 
 function calculDistance () {
@@ -97,23 +97,7 @@ Les coordonnées des sprites de la cible et du viseur !
 
 - :mouse pointer: Essaie de construire la formule de la distance qui utilise les coordonnées du sprite **Cible** pour le point **(x1,y1)** et celles du sprite du **viseur** pour le point **(x2,y2)**.
 
-💡_Si tu as besoin d'aide, regarde les étapes dans l'indice !_
-
-```
-1. définir [distance ▾] à (racine carrée ( ))
-2. définir [distance ▾] à (racine carrée ( (1) + (2) ))
-3. dans les trous (1) et (2) de l'addition, mettre un bloc () ** () (L'opérateur de puissance)
-=> définir [distance ▾] à (racine carrée ( ((3) ** (4)) + ((5) ** (6)) ))
-4. dans les trous (3) et (5) des puissance, mettre un bloc () - ()
-=> définir [distance ▾] à (racine carrée ( (((7)-(8)) ** (4)) + (((9)-(10)) ** (6)) ))
-5. écrire "2" dans les trous (4) et (6)
-4. Compléter les trous comme ceci : 
-    (7) = mySprite x
-    (8) = Cible x
-    (9) = mySprite y
-    (10) = Cible y
-=> définir [distance ▾] à (racine carrée ( (( mySprite x - Cible x) ** 2 ) + (( mySprite y - Cible y) ** 2 ) ))
-```
+💡_Si tu as besoin d'aide, tu peux prendre une fiche indice !_
 
 ## 6.  Un peu d'aide ? 
 

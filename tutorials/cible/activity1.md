@@ -95,7 +95,7 @@ controller.moveSprite(mySprite)
 
 - :mouse pointer: Pour faire en sorte que ton viseur reste dans la limite de l'écran, trouve le bloc  ``||sprites:définir [mySprite] rester à l'écran <on>||`` et connecte le à la fin du programme.
 
-- :sliders: Tu peux aussi en profiter pour modifier la vitesse de ton viseur ! Appuie sur le bouton **⊕** du bloc ``||controller: déplacer [mySprite] avec les boutons ⊕||`` et met  les les valeurs de **vx** et **vy** à **120**. Quel boost ! 🚀
+- :sliders: Tu peux aussi en profiter pour modifier la vitesse de ton viseur ! Appuie sur le bouton **⊕** du bloc ``||controller: déplacer [mySprite] avec les boutons ⊕||`` et met les valeurs de **vx** et **vy** à **120**. Quel boost ! 🚀
 
 ```blocks
 scene.setBackgroundImage(sprites.builtin.aquaticBackground)
@@ -129,7 +129,7 @@ mySprite.setStayInScreen(true)
 
 - :mouse pointer: Dans la catégorie ``||controller:Contrôleur||``, prends le container  ``||controller:quand bouton [A ▾] est [appuyé ▾]||`` et place le dans l'espace de travail.
 
-- :bullseye: Pour bien voir qu'on tire, on va **changer le sprite du viseur en rouge** quand on appuie sur **(A)** ! Pour ça, trouve le bloc ``||variables:définir image de [mySprite] à [ ]||`` et place le dans le container  ``||controller:quand bouton [A ▾] est [appuyé ▾]||``.
+- :bullseye: Pour bien voir qu'on tire, on va **changer le sprite du viseur en rouge** quand on appuie sur **(A)** ! Pour ça, trouve le bloc ``||sprites:définir image de [mySprite] à [ ]||`` et place le dans le container  ``||controller:quand bouton [A ▾] est [appuyé ▾]||``.
 
 - :pencil: Clique sur le carré gris au milieu du bloc ``||variables:définir image de [mySprite] à [ ]||``. Choisis le curseur rouge dans la galerie ou dessine le tien !
 
