@@ -5,7 +5,7 @@
 
 Ça avance bien ! Il est temps d'ajouter le code pour pouvoir tirer sur la cible. 🎯
 
-![Apercu3](https://raw.githubusercontent.com/neo-ptolemus/skillmap-cible/master/img/cible/cible_3.gif "Regarde ce qu'on va faire !")
+![Apercu3](https://i.postimg.cc/HkNH27p0/cible-3.gif "Regarde ce qu'on va faire !")
 
 
 ## 1. Le principe
@@ -40,7 +40,7 @@ Et en dehors de la cible ? *0pts...*
 
 _❓Est-ce que tu te rappelles de la formule du calcul de la distance ?_
 
-![formule](https://raw.githubusercontent.com/neo-ptolemus/skillmap-cible/master/img/cible/formule.png"La formule de la distance")
+![formule](https://i.postimg.cc/d12YwHGn/formule.png "La formule de la distance")
 
 ---
 
@@ -60,7 +60,7 @@ function calculDistance () {
 
 _🤔 Maintenant, de quoi on a besoin ?_
 
-![formule](https://raw.githubusercontent.com/neo-ptolemus/skillmap-cible/master/img/cible/formule.png "La formule de la distance")
+![formule](https://i.postimg.cc/d12YwHGn/formule.png "La formule de la distance")
 
 ---
 
@@ -84,7 +84,7 @@ Les coordonnées des sprites de la cible et du viseur !
 💡_**Indice 2 :** Tu ne pourras pas les ajouter tout de suite dans le code, ils vont dans des **trous ronds**_
 
 
-![blocs](https://raw.githubusercontent.com/neo-ptolemus/skillmap-cible/master/img/cible/block_x_y.png "La formule de la distance")
+![blocs](https://i.postimg.cc/pXqPm646/blocs-x-y.png "La formule de la distance")
 
 
 ## 5. Construire la formule 
