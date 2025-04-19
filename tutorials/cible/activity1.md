@@ -7,7 +7,7 @@
 Dans ce tutoriel, on va réviser la formule de la distance euclidienne en créeant un jeu de tir.
 
 ![Apercu](https://i.postimg.cc/yNSKrYdM/cible-1.gif "Regarde ce qu'on va faire !")
-![Apercu](https://raw.githubusercontent.com/neo-ptolemus/skillmap-cible/master/img/cible/cible_1.gif "Regarde ce qu'on va faire !")
+![Apercu2](https://raw.githubusercontent.com/neo-ptolemus/skillmap-cible/master/img/cible/cible_1.gif "Regarde ce qu'on va faire !")
 
 
 ## 1. Planter le décor
